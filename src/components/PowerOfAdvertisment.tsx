@@ -156,7 +156,7 @@ function PowerOfAdvertisment() {
 
             <a
               href="javascript:;"
-              class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
+              className="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
               >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

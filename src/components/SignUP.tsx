@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-
+import Truck8 from "../assets/truck8.jpg" 
+import Truck10 from "../assets/truck10.jpg" 
 function SignUP() {
   return (
-    <div className="bg-black text-white justify-items-center h-screen content-center ">
+    <div className="bg-black text-white justify-items-center h-screen content-center" 
+    style={{ backgroundImage: `url(${Truck10})`,backgroundSize:"contain", backgroundRepeat:"no-repeat" }}>
       <div className="text-7xl font-bold">SIGN UP</div>
       <div className="flex flex-col w-1/5 ">
       <input
