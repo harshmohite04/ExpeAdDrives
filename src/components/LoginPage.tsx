@@ -12,13 +12,13 @@ function loginPage() {
       </div>
       <img src={logo} className="rounded-xl w-1/3" alt="" />
       <div className="flex flex-row py-5 ">
-        <div className="rounded-lg px-5 py-1 text-black mr-4" style={{ background: "#B3B3B3" }}>
+        <div className="rounded-lg px-5 py-1 text-black mr-4 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer" style={{ background: "#B3B3B3" }}>
           Login As Client
         </div>
-        <div className="rounded-lg px-5 py-1 text-black" style={{ background: "#B3B3B3"}}>Login As Transport</div>
+        <div className="rounded-lg px-5 py-1 text-black transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer" style={{ background: "#B3B3B3"}}>Login As Transport</div>
       </div>
       <Link to="/signup">
-        <div className="rounded-lg px-5 py-1 text-black" style={{ background: "#B3B3B3"}}>Sign Up</div>
+        <div className="rounded-lg px-5 py-1 text-black transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer" style={{ background: "#B3B3B3"}}>Sign Up</div>
         </Link>
     </div>
   );
