@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function SignUP() {
   return (
     <div className="bg-black text-white justify-items-center h-screen content-center ">
@@ -25,8 +27,10 @@ function SignUP() {
         />
         
       </div>
+      <Link to="/powerOfAd">
       <div className="text-black px-5 mt-2 rounded-sm py-1" style={{ backgroundColor: "#B3B3B3" }}>Next</div>
-      <div className="bottom-1">Privacy Policy</div>
+      </Link>
+      <div className="self-end">Privacy Policy</div>
     </div>
   );
 }
