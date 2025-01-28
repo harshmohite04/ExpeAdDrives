@@ -1,6 +1,7 @@
-import React from "react";
 import logo from "../assets/logo1.jpg";
+import { Link } from "react-router-dom";
 function loginPage() {
+
   return (
     <div className="bg-black text-white justify-items-center h-screen content-center ">
       <div
@@ -16,7 +17,9 @@ function loginPage() {
         </div>
         <div className="rounded-lg px-5 py-1 text-black" style={{ background: "#B3B3B3"}}>Login As Transport</div>
       </div>
+      <Link to="/signup">
         <div className="rounded-lg px-5 py-1 text-black" style={{ background: "#B3B3B3"}}>Sign Up</div>
+        </Link>
     </div>
   );
 }
