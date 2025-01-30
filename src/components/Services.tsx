@@ -3,7 +3,18 @@ import Logo from "../assets/logo2.png";
 import { Link } from "react-router-dom";
 import Truck1 from "../assets/truck1.jpg";
 import Footer from "./Footer";
+import { motion } from "framer-motion";
 function Services() {
+
+  const steps = [
+    { text: "Step 1", x: "-32", y: "0" },
+    { text: "Step 2", x: "-16", y: "-10" },
+    { text: "Step 3", x: "16", y: "-10" },
+    { text: "Step 4", x: "32", y: "0" },
+    { text: "Step 5", x: "16", y: "10" },
+    { text: "Step 6", x: "-16", y: "10" },
+  ];
+  
   const [isOn, setIsOn] = useState(false);
   return (
     <div
@@ -60,9 +71,11 @@ function Services() {
               <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                 About Us
               </div>
+              <Link to="/contactUs">
               <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                 Contact Us
               </div>
+              </Link>
               <Link to="/login">
                 <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                   Login
@@ -134,7 +147,7 @@ function Services() {
 
       <div className="bg-black flex flex-col items-center py-20">
         <div className="text-8xl font-bold">ENGAGE WITH THE SERVICES</div>
-        <div className="steps"></div>
+       <div className="steps"></div>
         <div
           className="text-black py-1 px-3 rounded-lg text-2xl my-5"
           style={{ backgroundColor: "#505050" }}
