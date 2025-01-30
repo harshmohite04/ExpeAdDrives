@@ -29,7 +29,7 @@ function SignUP() {
         />
         
       </div>
-      <Link to="/powerOfAd">
+      <Link to="/">
       <div className="text-black px-5 mt-2 rounded-sm py-1 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" style={{ backgroundColor: "#B3B3B3" }}>Next</div>
       </Link>
       <div className="self-end">Privacy Policy</div>

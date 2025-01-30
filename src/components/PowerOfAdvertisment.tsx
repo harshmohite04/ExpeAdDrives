@@ -54,7 +54,7 @@ function PowerOfAdvertisment() {
               <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                 Contact Us
               </div>
-              <Link to="/signup">
+              <Link to="/login">
                 <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                   Login
                 </div>
@@ -113,10 +113,10 @@ function PowerOfAdvertisment() {
           </div>
         </div>
         <div className="w-2/3 h-1/4  flex flex-row">
-          <div className="w-1/4 bg-zinc-500 h-full"></div>
-          <div className="w-3/4 bg-white h-full text-black font-bold text-5xl py-4 px-2">
-            WHY IS IT BETTER
+          <div className="w-3/4 text-end py-4 px-2 bg-white h-full text-black font-bold text-5xl ">
+            WHAT YOU GET
           </div>
+          <div className="w-1/4 bg-zinc-500 h-full"></div>
         </div>
         <div className="text-6xl text-white font-bold ">
           LEARN ABOUT THE SERVICES
@@ -135,7 +135,7 @@ function PowerOfAdvertisment() {
             >
               <a
                 href="javascript:;"
-                class="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
+                className="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
