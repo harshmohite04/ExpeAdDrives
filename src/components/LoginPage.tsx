@@ -1,9 +1,4 @@
 import logo from "../assets/logo1.jpg";
-import Truck1 from "../assets/truck1.jpg" 
-import Truck2 from "../assets/truck2.jpg" 
-import Truck3 from "../assets/truck3.jpg" 
-import Truck4 from "../assets/truck4.jpg" 
-import Truck5 from "../assets/truck5.jpg" 
 import Truck7 from "../assets/truck7.jpg" 
 
 import { Link } from "react-router-dom";
