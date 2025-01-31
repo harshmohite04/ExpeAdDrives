@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function ContactUs() {
   const [isOn, setIsOn] = useState(false);
   return (
-    <div className="h-screen bg-black text-white relative overflow-y-scroll">
+    <div className="h-screen bg-black text-white relative overflow-y-scroll py-10">
       <div className="">
         <div className="flex flex-row justify-between px-10 py-1 top-0 bg-black z-10">
           <img src={Logo} alt="Logo" className="w-1/12" />
@@ -89,27 +89,30 @@ function ContactUs() {
         <div className="flex flex-col px-10 border-r-2 w-1/2">
           <input
             placeholder="Name"
-            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg"
+            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg placeholder-white"
           />
           <input
             placeholder="Company"
-            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg"
+            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg placeholder-white"
           />
           <input
             placeholder="Email"
-            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg"
+            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg placeholder-white"
           />
           <input
             placeholder="Mobile No"
-            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg"
+            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg placeholder-white"
           />
           <input
             placeholder="Message"
-            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg h-32"
+            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg h-32 placeholder-white"
           />
-          <div className="bg-zinc-600 mt-4 px-2 py-1 rounded-lg w-1/3 text-center self-center ">Submit</div>
+          <div className="bg-zinc-600 mt-4 px-2 py-1 rounded-lg w-1/3 text-center self-center select-none">
+            Submit
+          </div>
         </div>
         <div className="flex flex-col px-10 w-1/2">
+          <div className="text-4xl font-bold">Contact with us</div>
           <div className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg">
             Hello World
           </div>
