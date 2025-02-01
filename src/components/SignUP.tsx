@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Truck8 from "../assets/truck8.jpg" 
 import Truck10 from "../assets/truck10.jpg" 
 function SignUP() {
   return (

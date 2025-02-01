@@ -59,9 +59,11 @@ function Services() {
           <div className="bg-zinc-700 text-white w-3/4 max-w-md p-6 rounded-lg shadow-lg">
             <div className="flex flex-col gap-4">
               <div className="text-lg font-bold">Menu</div>
+              <Link to="/">
               <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                 Home
               </div>
+              </Link >
               <Link to="/services">
                 <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                   Services
