@@ -9,7 +9,9 @@ function PowerOfAdvertisment() {
   return (
     <div className="h-screen text-white bg-zinc-800 relative overflow-y-scroll">
       <div className="flex flex-row justify-between px-10 py-1 top-0 bg-zinc-800 z-10">
-        <img src={Logo} alt="Logo" className="w-1/12" />
+      <Link to="/">
+        <img src={Logo} alt="Logo" className="w-1/12"/>
+        </Link>
         {!isOn ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
