@@ -7,7 +7,7 @@ function PowerOfAdvertisment() {
   const [isOn, setIsOn] = useState(false);
 
   return (
-    <div className="h-screen text-white bg-zinc-800 relative overflow-y-scroll">
+    <div className="h-screen text-white bg-zinc-800 relative overflow-y-scroll ">
       <div className="flex flex-row justify-between px-10 py-1 top-0 bg-zinc-800 z-10 items-center">
       <Link to="/" className="w-1/12">
         <img src={Logo} alt="Logo" className="" />
@@ -112,6 +112,7 @@ function PowerOfAdvertisment() {
         <div className="font-bold text-5xl w-1/2 text-center top-0">
           ADVERTISMENT THAT CHANGED BRAND VALUE AND REACH
         </div>
+        
 
       </div>
 
