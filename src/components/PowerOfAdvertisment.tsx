@@ -9,8 +9,8 @@ function PowerOfAdvertisment() {
   return (
     <div className="h-screen text-white bg-zinc-800 relative overflow-y-scroll">
       <div className="flex flex-row justify-between px-10 py-1 top-0 bg-zinc-800 z-10">
-      <Link to="/">
-        <img src={Logo} alt="Logo" className="w-1/12"/>
+      <Link to="/" className="w-1/12">
+        <img src={Logo} alt="Logo" className="" />
         </Link>
         {!isOn ? (
           <svg
@@ -130,6 +130,12 @@ function PowerOfAdvertisment() {
         <div className="text-6xl text-white font-bold ">
           LEARN ABOUT THE SERVICES
         </div>
+      </div>
+      <div className="h-screen flex flex-col justify-around items-center" style={{backgroundColor:"#505050"}}>
+       
+      </div>
+      <div className="flex flex-col justify-around items-center bg-black py-30" >
+        <div className="font-extrabold text-5xl px-10 py-5 rounded-2xl" style={{backgroundColor:"#D9D9D9"}}>Contact Us</div>
       </div>
       <Footer/>
     </div>

@@ -2,15 +2,15 @@ import { useState } from "react";
 import Logo from "../assets/logo3.jpg";
 import Truck1 from "../assets/truck1.jpg";
 import { Link } from "react-router-dom";
-
+import Footer from "./Footer";
 function ContactUs() {
   const [isOn, setIsOn] = useState(false);
   return (
-    <div className="h-screen bg-black text-white relative overflow-y-scroll py-10">
+    <div className="h-screen bg-black text-white relative overflow-y-scroll pt-10">
       <div className="">
         <div className="flex flex-row justify-between px-10 py-1 top-0 bg-black z-10">
-        <Link to="/">
-        <img src={Logo} alt="Logo" className="w-1/12"/>
+        <Link to="/" className="w-1/12">
+        <img src={Logo} alt="Logo" className="" />
         </Link>
           {!isOn ? (
             <svg
@@ -125,6 +125,7 @@ function ContactUs() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

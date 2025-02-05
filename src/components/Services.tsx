@@ -3,6 +3,7 @@ import Logo from "../assets/logo2.png";
 import { Link } from "react-router-dom";
 import Truck1 from "../assets/truck1.jpg";
 import Footer from "./Footer";
+import PDF from "../assets/Brochure.pdf";
 // import { motion } from "framer-motion";
 function Services() {
   // const steps = [
@@ -24,8 +25,8 @@ function Services() {
         className="flex flex-row justify-between px-10 py-1 top-0 bg-zinc-800 z-10"
         style={{ backgroundColor: "#505050" }}
       >
-       <Link to="/">
-        <img src={Logo} alt="Logo" className="w-1/12"/>
+        <Link to="/" className="w-1/12 ">
+          <img src={Logo} alt="Logo" className="" />
         </Link>
         {!isOn ? (
           <svg
@@ -62,10 +63,10 @@ function Services() {
             <div className="flex flex-col gap-4">
               <div className="text-lg font-bold">Menu</div>
               <Link to="/">
-              <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
-                Home
-              </div>
-              </Link >
+                <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
+                  Home
+                </div>
+              </Link>
               <Link to="/services">
                 <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                   Services
@@ -113,39 +114,39 @@ function Services() {
       </div>
 
       <div className="py-10 bg-black flex flex-col pt-20 items-center">
-        <div className="flex flex-row items-center justify-between px-10">
-          <img src={Truck1} className="w-1/2" alt="" />
+        <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10">
+          <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
           <div className="">
-            <div className="font-bold text-9xl text-center">We Bring</div>
-            <div className="font-bold text-9xl text-center">EXPErience</div>
+            <div className="font-bold text-7xl text-center">We Bring</div>
+            <div className="font-bold text-7xl text-center">EXPErience</div>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-between px-10">
+        <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
           <div className="">
-            <div className="font-bold text-9xl text-center">We Bring</div>
-            <div className="font-bold text-9xl text-center">EXPEdite</div>
+            <div className="font-bold text-7xl text-center">We Bring</div>
+            <div className="font-bold text-7xl text-center">EXPEdite</div>
           </div>
-          <img src={Truck1} className="w-1/2" alt="" />
+          <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
         </div>
-        <div className="flex flex-row items-center justify-between px-10">
-          <img src={Truck1} className="w-1/2" alt="" />
+        <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
+          <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
           <div className="">
-            <div className="font-bold text-9xl text-center">We Bring</div>
-            <div className="font-bold text-9xl text-center">EXPEdition</div>
+            <div className="font-bold text-7xl text-center">We Bring</div>
+            <div className="font-bold text-7xl text-center">EXPEdition</div>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-between px-10">
+        <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
           <div className="">
-            <div className="font-bold text-9xl text-center">We Bring</div>
-            <div className="font-bold text-9xl text-center">EXPErties</div>
+            <div className="font-bold text-7xl text-center">We Bring</div>
+            <div className="font-bold text-7xl text-center">EXPErties</div>
           </div>
-          <img src={Truck1} className="w-1/2" alt="" />
+          <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
         </div>
-        <div className="flex flex-row items-center justify-between px-10">
-          <img src={Truck1} className="w-1/2" alt="" />
+        <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
+          <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
           <div className="">
-            <div className="font-bold text-9xl text-center">We Bring</div>
-            <div className="font-bold text-9xl text-center">EXPEctations</div>
+            <div className="font-bold text-7xl text-center">We Bring</div>
+            <div className="font-bold text-7xl text-center">EXPEctations</div>
           </div>
         </div>
       </div>
@@ -157,8 +158,11 @@ function Services() {
           className="text-black py-1 px-3 rounded-lg text-2xl my-5"
           style={{ backgroundColor: "#505050" }}
         >
-          Download Brochure
+          <a href={PDF} target="_blank" rel="noopener noreferrer">
+            Download Brochure
+          </a>
         </div>
+
         <div
           className="text-black py-1 px-3 rounded-lg text-2xl my-5"
           style={{ backgroundColor: "#505050" }}

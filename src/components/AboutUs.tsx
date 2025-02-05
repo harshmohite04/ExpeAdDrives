@@ -19,8 +19,8 @@ function AboutUs() {
     <div className="min-h-screen text-white bg-zinc-800 relative overflow-y-auto">
       {/* Header */}
       <div className="flex flex-row justify-between px-10 py-1 bg-zinc-800 z-10">
-        <Link to="/">
-        <img src={Logo} alt="Logo" className="w-1/12"/>
+      <Link to="/" className="w-1/12">
+        <img src={Logo} alt="Logo" className="" />
         </Link>
         {!isOn ? (
           <svg
