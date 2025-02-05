@@ -48,9 +48,11 @@ function ContactUs() {
                     Services
                   </div>
                 </Link>
+                <Link to="/aboutus">
                 <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                   About Us
                 </div>
+                </Link>
                 <Link to="/contactUs">
                   <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                     Contact Us

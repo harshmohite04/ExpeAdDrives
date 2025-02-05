@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Logo from "../assets/logo2.png";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import AOS from "aos";
+import AOS from "aos"; 
 import "aos/dist/aos.css";
 import Truck2 from "../assets/truck2.jpg"
 import Truck3 from "../assets/truck3.jpg"
@@ -18,7 +18,7 @@ function AboutUs() {
   return (
     <div className="min-h-screen text-white bg-zinc-800 relative overflow-y-auto">
       {/* Header */}
-      <div className="flex flex-row justify-between px-10 py-1 bg-zinc-800 z-10">
+      <div className="flex flex-row justify-between px-10 py-1 bg-zinc-800 z-10 items-center">
       <Link to="/" className="w-1/12">
         <img src={Logo} alt="Logo" className="" />
         </Link>

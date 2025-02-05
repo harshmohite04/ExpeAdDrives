@@ -22,7 +22,7 @@ function Services() {
       style={{ backgroundColor: "#505050" }}
     >
       <div
-        className="flex flex-row justify-between px-10 py-1 top-0 bg-zinc-800 z-10"
+        className="flex flex-row justify-between px-10 py-1 top-0 bg-zinc-800 z-10 items-center"
         style={{ backgroundColor: "#505050" }}
       >
         <Link to="/" className="w-1/12 ">
