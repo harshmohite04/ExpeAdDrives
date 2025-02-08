@@ -125,7 +125,7 @@ function AboutUs() {
             data-aos="fade-up"
           >
             <span className="text-white">
-            <img src={Image1} alt="" className="h-4/5 justify-self-center" />
+            <img src={Image1} alt="fdfd" className="h-4/5 justify-self-center" />
             </span>
           </div>
           <div
