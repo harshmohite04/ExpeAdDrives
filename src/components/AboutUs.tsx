@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import Logo from "../assets/logo2.png";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import AOS from "aos"; 
+import AOS from "aos";
 import "aos/dist/aos.css";
-import Truck2 from "../assets/truck2.jpg"
-import Truck3 from "../assets/truck3.jpg"
-import Truck4 from "../assets/truck4.jpg"
-import Truck5 from "../assets/truck5.jpg"
+import Image1 from "../assets/logo4.jpg";
+import Truck2 from "../assets/truck2.jpg";
+import Truck3 from "../assets/truck3.jpg";
+import Truck4 from "../assets/truck4.jpg";
+import Truck5 from "../assets/truck5.jpg";
 function AboutUs() {
   const [isOn, setIsOn] = useState(false);
 
@@ -19,8 +20,8 @@ function AboutUs() {
     <div className="min-h-screen text-white bg-zinc-800 relative overflow-y-auto">
       {/* Header */}
       <div className="flex flex-row justify-between px-10 py-1 bg-zinc-800 z-10 items-center">
-      <Link to="/" className="w-1/12">
-        <img src={Logo} alt="Logo" className="" />
+        <Link to="/" className="w-1/12">
+          <img src={Logo} alt="Logo" className="" />
         </Link>
         {!isOn ? (
           <svg
@@ -45,33 +46,96 @@ function AboutUs() {
       <div className="flex flex-col items-center mt-10">
         <div className="font-bold text-6xl mb-10">Our Mission</div>
 
-        <div className="w-full min-h-[200vh] grid place-items-center gap-y-20 p-28">
-            <div
-              className="w-1/2 h-96  grid place-content-center"
-              data-aos="fade-up"
-            >
-              <span className="text-white"><img src={Truck2} className="rounded-lg" alt="" /> </span>
-            </div>
-            <div
-              className="w-1/2 h-96  grid place-content-center"
-              data-aos="fade-up"
-            >
-              <span className="text-white"><img src={Truck3} className="rounded-lg" alt="" /> </span>
-            </div>
-            <div
-              className="w-1/2 h-96  grid place-content-center"
-              data-aos="fade-up"
-            >
-              <span className="text-white"><img src={Truck4} className="rounded-lg" alt="" /> </span>
-            </div>
-            <div
-              className="w-1/2 h-96  grid place-content-center"
-              data-aos="fade-up"
-            >
-              <span className="text-white"><img src={Truck5} className="rounded-lg" alt="" /> </span>
-            </div>
-            
-           
+        <div className="w-full min-h-[200vh] grid place-items-center gap-y-20 ">
+          <div
+            className="w-1/2 h-96  grid place-content-center"
+            data-aos="fade-up"
+          >
+            <span className="text-white">
+              <img src={Image1} alt="" className="h-4/5 justify-self-center" />
+            </span>
+          </div>
+          <div
+            className="w-1/2 h-96  grid place-content-center"
+            data-aos="fade-up"
+          >
+            <span className="text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="size-100"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="w-1/2 h-96  grid place-content-center"
+            data-aos="fade-up"
+          >
+            <span className="text-white text-2xl">
+              Transforming Mobility into Marketing! We don’t just advertise—we
+              move brands forward! Imagine your brand on wheels, reaching the
+              right audience at the right time. Our mission is simple: turn
+              commercial vehicles into dynamic, data-driven billboards that
+              maximize visibility and impact. Through cutting-edge technology
+              and storytelling, we create high-engagement campaigns that make
+              brands impossible to ignore. Why stay still when your brand can
+              move? Let’s drive your success together!
+            </span>
+          </div>
+          <div
+            className="w-1/2 h-96  grid place-content-center"
+            data-aos="fade-up"
+          >
+            <span className="text-white">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="size-100"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            className="w-1/2 grid place-content-center"
+            data-aos="fade-up"
+          >
+            <span className="text-white text-6xl font-bold">
+             How we Started
+            </span>
+          </div>
+          <div
+            className="w-1/2 h-96  grid place-content-center"
+            data-aos="fade-up"
+          >
+            <span className="text-white">
+            <img src={Image1} alt="" className="h-4/5 justify-self-center" />
+            </span>
+          </div>
+          <div
+            className="w-1/2 h-96 grid place-content-center"
+            data-aos="fade-up"
+          >
+            <span className="text-white">
+            <img src={Image1} alt="" className="h-4/5 justify-self-center" />
+            </span>
+          </div>
         </div>
       </div>
 
@@ -81,11 +145,21 @@ function AboutUs() {
           <div className="bg-zinc-700 text-white w-3/4 max-w-md p-6 rounded-lg shadow-lg">
             <div className="flex flex-col gap-4">
               <div className="text-lg font-bold">Menu</div>
-              <Link to="/"><div className="cursor-pointer hover:scale-110">Home</div></Link>
-              <Link to="/services"><div className="cursor-pointer hover:scale-110">Services</div></Link>
-              <Link to="/aboutus"><div className="cursor-pointer hover:scale-110">About Us</div></Link>
-              <Link to="/contactus"><div className="cursor-pointer hover:scale-110">Contact Us</div></Link>
-              <Link to="/login"><div className="cursor-pointer hover:scale-110">Login</div></Link>
+              <Link to="/">
+                <div className="cursor-pointer hover:scale-110">Home</div>
+              </Link>
+              <Link to="/services">
+                <div className="cursor-pointer hover:scale-110">Services</div>
+              </Link>
+              <Link to="/aboutus">
+                <div className="cursor-pointer hover:scale-110">About Us</div>
+              </Link>
+              <Link to="/contactus">
+                <div className="cursor-pointer hover:scale-110">Contact Us</div>
+              </Link>
+              <Link to="/login">
+                <div className="cursor-pointer hover:scale-110">Login</div>
+              </Link>
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +170,11 @@ function AboutUs() {
               className="w-6 h-6 mt-4 cursor-pointer self-end"
               onClick={() => setIsOn(false)}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </div>
         </div>
