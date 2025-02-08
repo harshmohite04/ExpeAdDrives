@@ -1,16 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../assets/logo2.png";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import Truck3 from "../assets/truck3.jpg"
+import Truck3 from "../assets/truck3.jpg";
+
+import axios from "axios";
 function PowerOfAdvertisment() {
   const [isOn, setIsOn] = useState(false);
-
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/", { withCredentials: true });
+        console.log(response);
+        console.log("hello world");
+        
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchData();
+  }, []);
   return (
     <div className="h-screen text-white bg-zinc-800 relative overflow-y-scroll ">
       <div className="flex flex-row justify-between px-10 py-1 top-0 bg-zinc-800 z-10 items-center">
-      <Link to="/" className="w-1/12">
-        <img src={Logo} alt="Logo" className="" />
+        <Link to="/" className="w-1/12">
+          <img src={Logo} alt="Logo" className="" />
         </Link>
         {!isOn ? (
           <svg
@@ -44,24 +58,24 @@ function PowerOfAdvertisment() {
             <div className="flex flex-col gap-4">
               <div className="text-lg font-bold">Menu</div>
               <Link to="/">
-              <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
-                Home
-              </div>
-              </Link >
-              <Link to="/services">
-              <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
-                Services
-              </div>
+                <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
+                  Home
+                </div>
               </Link>
-              <Link to='/aboutus'>
-              <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
-                About Us
-              </div>
+              <Link to="/services">
+                <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
+                  Services
+                </div>
+              </Link>
+              <Link to="/aboutus">
+                <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
+                  About Us
+                </div>
               </Link>
               <Link to="/contactus">
-              <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
-                Contact Us
-              </div>
+                <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
+                  Contact Us
+                </div>
               </Link>
               <Link to="/login">
                 <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
@@ -112,8 +126,6 @@ function PowerOfAdvertisment() {
         <div className="font-bold text-5xl w-1/2 text-center top-0">
           ADVERTISMENT THAT CHANGED BRAND VALUE AND REACH
         </div>
-        
-
       </div>
 
       <div className="h-screen bg-zinc-900 flex flex-col justify-around items-center">
@@ -133,14 +145,21 @@ function PowerOfAdvertisment() {
           LEARN ABOUT THE SERVICES
         </div>
       </div>
-      <div className="justify-self-center items-center" style={{backgroundColor:"#000000"}}>
-      
-      <img src={Truck3} alt="" />
+      <div
+        className="justify-self-center items-center"
+        style={{ backgroundColor: "#000000" }}
+      >
+        <img src={Truck3} alt="" />
       </div>
-      <div className="flex flex-col justify-around items-center bg-black py-30" >
-        <div className="font-extrabold text-5xl px-10 py-5 rounded-2xl" style={{backgroundColor:"#D9D9D9"}}>Contact Us</div>
+      <div className="flex flex-col justify-around items-center bg-black py-30">
+        <div
+          className="font-extrabold text-5xl px-10 py-5 rounded-2xl"
+          style={{ backgroundColor: "#D9D9D9" }}
+        >
+          Contact Us
+        </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -1,11 +1,27 @@
 const express = require("express");
+const jwt = require("jsonwebtoken");
+const cookieParser = require("cookie-parser");
 
+const cors = require("cors");
 const app = express();
+app.use(express.json());
+app.use(cookieParser());
+app.use(cors({
+  origin:"http://localhost:5173",
+  credentials: true,
+}));
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  const token = jwt.sign({ user: "Harsh" }, "your_secret_key", { expiresIn: "1h" });
+  
+  res.cookie("auth_token", token, {
+    httpOnly: false, 
+    secure: false, 
+    maxAge: 3600000, 
+  });
+  res.send("Cookie has been set!");
 });
 
-app.listen('3000',()=>{ 
-    console.log("Server is running on 3000 port")
-})
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
