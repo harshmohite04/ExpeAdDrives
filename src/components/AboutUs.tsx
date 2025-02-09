@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image1 from "../assets/logo4.jpg";
+import Image1 from "../assets/image.png";
 import Truck2 from "../assets/truck2.jpg";
 import Truck3 from "../assets/truck3.jpg";
 import Truck4 from "../assets/truck4.jpg";
@@ -52,7 +52,7 @@ function AboutUs() {
             data-aos="fade-up"
           >
             <span className="text-white">
-              <img src={Image1} alt="" className="h-4/5 justify-self-center" />
+              <img src={Truck2} alt="" className="h-4/5 justify-self-center" />
             </span>
           </div>
           <div
@@ -96,7 +96,7 @@ function AboutUs() {
             data-aos="fade-up"
           >
             <span className="text-white">
-            <svg
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -112,28 +112,36 @@ function AboutUs() {
               </svg>
             </span>
           </div>
-          <div
-            className="w-1/2 grid place-content-center"
-            data-aos="fade-up"
-          >
+          <div className="w-1/2 grid place-content-center" data-aos="fade-up">
             <span className="text-white text-6xl font-bold">
-             How we Started
+              How we Started
             </span>
           </div>
+
           <div
-            className="w-1/2 h-96  grid place-content-center"
+            className="w-2/3 grid bg-black py-10 rounded-2xl"
             data-aos="fade-up"
           >
-            <span className="text-white">
-            <img src={Image1} alt="fdfd" className="h-4/5 justify-self-center" />
-            </span>
+            <div className="flex px-10">
+              <div className="w-2/3" data-aos="fade-up-right">
+                <img
+                  src={Image1}
+                  alt="fdfd"
+                  className="w-100 justify-self-center rounded-full"
+                  
+                />
+                <div className="text-center text-2xl">Harsh Mohite </div>
+              </div>
+              <div className=" py-10 px-5 text-center" data-aos="fade-up-left">The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite.</div>
+            </div>
           </div>
+
           <div
             className="w-1/2 h-96 grid place-content-center"
             data-aos="fade-up"
           >
             <span className="text-white">
-            <img src={Image1} alt="" className="h-4/5 justify-self-center" />
+              <img src={Image1} alt="" className="h-4/5 justify-self-center" />
             </span>
           </div>
         </div>
