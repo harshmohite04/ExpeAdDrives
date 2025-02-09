@@ -116,7 +116,7 @@ function AboutUs() {
           </div>
           <div className="w-1/2 grid place-content-center" data-aos="fade-up">
             <span className="text-white text-6xl font-bold">
-              How we Started
+              How we Started.
             </span>
           </div>
 
