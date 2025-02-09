@@ -78,7 +78,7 @@ function PowerOfAdvertisment() {
                   Contact Us
                 </div>
               </Link>
-              <Link to="/login">
+              <Link to="/welcome">
                 <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                   Login
                 </div>

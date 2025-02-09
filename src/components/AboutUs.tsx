@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image1 from "../assets/image.png";
 import Truck2 from "../assets/truck2.jpg";
-import Truck3 from "../assets/truck3.jpg";
-import Truck4 from "../assets/truck4.jpg";
-import Truck5 from "../assets/truck5.jpg";
+import Person1 from "../assets/Person1.jpg";
+import Person2 from "../assets/Person2.jpg";
+import Person3 from "../assets/Person3.jpg";
+import Person4 from "../assets/Person4.jpg";
+
+import TeamCards from "./compo/TeamCards";
 function AboutUs() {
   const [isOn, setIsOn] = useState(false);
 
@@ -118,7 +120,7 @@ function AboutUs() {
             </span>
           </div>
 
-          <div
+          {/* <div
             className="w-2/3 grid bg-black py-10 rounded-2xl"
             data-aos="fade-up"
           >
@@ -134,16 +136,29 @@ function AboutUs() {
               </div>
               <div className=" py-10 px-5 text-center" data-aos="fade-up-left">The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite.</div>
             </div>
-          </div>
+          </div> */}
+          <TeamCards
+            image={Person1}
+            name="Harsh Mohite"
+            description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
+          />
+          <TeamCards
+            image={Person2}
+            name="Harsh Mohite"
+            description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
+          />
+          <TeamCards
+            image={Person3}
+            name="Harsh Mohite"
+            description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
+          />
+          <TeamCards
+            image={Person4}
+            name="Harsh Mohite"
+            description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
+          />
 
-          <div
-            className="w-1/2 h-96 grid place-content-center"
-            data-aos="fade-up"
-          >
-            <span className="text-white">
-              <img src={Image1} alt="" className="h-4/5 justify-self-center" />
-            </span>
-          </div>
+         
         </div>
       </div>
 

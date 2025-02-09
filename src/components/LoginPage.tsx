@@ -1,44 +1,35 @@
-import logo from "../assets/logo1.jpg";
-import Truck7 from "../assets/truck7.jpg" 
-
 import { Link } from "react-router-dom";
-function loginPage() {
+import Truck10 from "../assets/truck10.jpg";
+function LoginPage() {
   return (
     <div
-      className="bg-black text-white justify-items-center w-full h-screen content-center "
-      style={{ backgroundImage: `url(${Truck7})`,backgroundSize:"contain", backgroundRepeat:"no-repeat" }}
+      className="bg-white text-black justify-items-center h-screen content-center select-none"
+      // style={{ backgroundImage: `url(${Truck10})`,backgroundSize:"cover", backgroundRepeat:"no-repeat" }}
     >
-      <div
-        className="text-6xl font-bold
-"
-      >
-        WELCOME
+      <div className="text-7xl my-5 font-bold">Login</div>
+      <div className="flex flex-col w-1/5">
+        <input
+          // style={{ backgroundColor: "#B3B3B3" }}
+          className="border-none px-2 rounded-sm mt-2 py-1 placeholder-gray-400 bg-zinc-700 text-white"
+          placeholder="Username"
+        />
+        <input
+          // style={{ backgroundColor: "#B3B3B3" }}
+          className="border-none px-2 rounded-sm mt-2 py-1 placeholder-gray-400 bg-zinc-700 text-white"
+          placeholder="Password"
+        />
       </div>
-      <img src={logo} className="rounded-xl w-1/3 " alt="" />
-      <div className="flex flex-row py-5 ">
+      <Link to="/">
         <div
-          className="rounded-lg px-5 py-1 text-black mr-4 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer"
-          style={{ background: "#B3B3B3" }}
+          className="text-white px-5 mt-2 rounded-sm py-1 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 bg-blue-400"
+          // style={{ backgroundColor: "#B3B3B3" }}
         >
-          Login As Client
-        </div>
-        <div
-          className="rounded-lg px-5 py-1 text-black transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer"
-          style={{ background: "#B3B3B3" }}
-        >
-          Login As Transport
-        </div>
-      </div>
-      <Link to="/signup">
-        <div
-          className="rounded-lg px-5 py-1 text-black transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer"
-          style={{ background: "#B3B3B3" }}
-        >
-          Sign Up
+          Next
         </div>
       </Link>
+      <div className="self-end">Privacy Policy</div>
     </div>
   );
 }
 
-export default loginPage;
+export default LoginPage;
