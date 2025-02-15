@@ -7,7 +7,7 @@ function Footer() {
     >
       <img src={Logo} alt="Logo" className="w-1/12" />
       <div className="">
-        <div className="bg-zinc-400 rounded-xl px-10 w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">
+        <div className=" rounded-xl px-10 w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">
           <div
             className=""
             onClick={() => {
@@ -16,7 +16,7 @@ function Footer() {
           >
             <a
               href="javascript:;"
-              className="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
+              className="p-2 rounded-lg flex items-center border border-gray-300 bg-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ function Footer() {
           >
             <a
               href="javascript:;"
-              className="p-2 rounded-lg flex items-center border border-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
+              className="p-2 rounded-lg flex items-center border border-gray-300 bg-gray-300 justify-center transition-all duration-500 hover:border-gray-100 hover:bg-gray-100"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

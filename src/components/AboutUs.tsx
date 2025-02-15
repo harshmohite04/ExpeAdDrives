@@ -45,7 +45,7 @@ function AboutUs() {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col items-center mt-10">
+      <div className="flex flex-col items-center  my-10">
         <div className="font-bold text-6xl mb-10">Our Mission</div>
 
         <div className="w-full min-h-[200vh] grid place-items-center gap-y-20 ">
@@ -139,22 +139,22 @@ function AboutUs() {
           </div> */}
           <TeamCards
             image={Person1}
-            name="Harsh Mohite"
-            description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
+            name="Sayamee Oswal"
+            description="I am a pre-final year engineering student with a strong focus on human resource management and social media strategy. At Expe Ad Drives, I manage HR operations and social media presence, ensuring efficient team coordination, talent acquisition, and content-driven brand engagement. My role involves strategizing and optimizing digital marketing efforts, enhancing audience reach, and maintaining a seamless workflow within the organization.I am actively involved in my family business, which has given me firsthand experience in business operations, management, and strategic decision-making. This exposure has strengthened my ability to analyze market trends, manage teams, and implement effective growth strategies. With a keen interest in organizational development and people management, I am looking forward to pursuing an MBA in HR to further refine my expertise in building high-performing teams and driving business growth through effective workforce strategies."
           />
           <TeamCards
             image={Person2}
-            name="Harsh Mohite"
+            name="Prajwal"
             description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
           />
           <TeamCards
             image={Person3}
-            name="Harsh Mohite"
+            name="Vidisha Munot"
             description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
           />
           <TeamCards
             image={Person4}
-            name="Harsh Mohite"
+            name=""
             description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
           />
 
