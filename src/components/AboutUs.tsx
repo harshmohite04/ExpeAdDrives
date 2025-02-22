@@ -9,7 +9,7 @@ import Person1 from "../assets/Person1.jpg";
 import Person2 from "../assets/Person2.jpg";
 import Person3 from "../assets/Person3.jpg";
 import Person4 from "../assets/Person4.jpg";
-
+import Person5 from "../assets/Person5.png"
 import TeamCards from "./compo/TeamCards";
 function AboutUs() {
   const [isOn, setIsOn] = useState(false);
@@ -116,7 +116,7 @@ function AboutUs() {
           </div>
           <div className="w-1/2 grid place-content-center" data-aos="fade-up">
             <span className="text-white text-6xl font-bold">
-              How we Started.
+              Our Team
             </span>
           </div>
 
@@ -125,37 +125,55 @@ function AboutUs() {
             data-aos="fade-up"
           >
             <div className="flex px-10">
-              <div className="w-2/3" data-aos="fade-up-right">
-                <img
-                  src={Image1}
-                  alt="fdfd"
-                  className="w-100 justify-self-center rounded-full"
-                  
-                />
-                <div className="text-center text-2xl">Harsh Mohite </div>
-              </div>
-              <div className=" py-10 px-5 text-center" data-aos="fade-up-left">The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite.</div>
+            <div className="w-2/3" data-aos="fade-up-right">
+            <img
+            src={Image1}
+            alt="fdfd"
+            className="w-100 justify-self-center rounded-full"
+            
+            />
+            <div className="text-center text-2xl">Harsh Mohite </div>
             </div>
-          </div> */}
+            <div className=" py-10 px-5 text-center" data-aos="fade-up-left">The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite.</div>
+            </div>
+            </div> */}
+            <TeamCards
+              image={Person5}
+              name="Omkar Kolhe"
+              role="Founder,CEO"
+              description="I am an engineering student with a keen interest in human resource management and social media strategy. At EXPE Ad Drives, I oversee HR operations and digital marketing, ensuring seamless team coordination, talent acquisition, and content-driven brand engagement. My role involves strategizing and optimizing marketing efforts to expand audience reach and enhance brand visibility."
+              />
+            <TeamCards
+              image={Person2}
+              name="Prajwal Guttal" 
+              role="Co-Founder,COO"
+              description="As the Co-Founder and COO, I drive the company's daily operations with a strategic, results-driven approach. I am responsible for ensuring operational efficiency, aligning business activities with organizational goals, and fostering a seamless workflow. With strong expertise in business management and team coordination, I provide strategic direction, optimize processes, and drive sustainable growth, contributing to the company’s long-term success."
+            />
+            
+            <TeamCards
+              image={Person4}
+              name="Mohit Vishwakarma"
+              role="Fleet Executive"
+              description="I serve as a Fleet Executive, managing and coordinating fleet operations. My role involves overseeing vehicle logistics, optimizing efficiency, and maintaining seamless communication between drivers and the company. With a keen eye for detail and strong problem-solving skills, I ensure operational compliance and continuously strive to enhance overall fleet performance."
+            />
+            <TeamCards
+              image={Person4}
+              name="Pranit Sonawale"
+              role="Head of Marketing"
+              description="As the Head of Marketing and Client Relations, I am responsible for enhancing brand presence and fostering strong client partnerships. With a background in a service-based family business, I possess a deep understanding of brand promotion and customer engagement. I actively manage client meetings, accompany the CEO for key discussions, and ensure seamless communication. My role involves strategizing and optimizing marketing efforts to expand audience reach and enhance brand visibility.
+"
+            />
           <TeamCards
             image={Person1}
             name="Sayamee Oswal"
-            description="I am a pre-final year engineering student with a strong focus on human resource management and social media strategy. At Expe Ad Drives, I manage HR operations and social media presence, ensuring efficient team coordination, talent acquisition, and content-driven brand engagement. My role involves strategizing and optimizing digital marketing efforts, enhancing audience reach, and maintaining a seamless workflow within the organization.I am actively involved in my family business, which has given me firsthand experience in business operations, management, and strategic decision-making. This exposure has strengthened my ability to analyze market trends, manage teams, and implement effective growth strategies. With a keen interest in organizational development and people management, I am looking forward to pursuing an MBA in HR to further refine my expertise in building high-performing teams and driving business growth through effective workforce strategies."
-          />
-          <TeamCards
-            image={Person2}
-            name="Prajwal"
-            description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
+            role=" HR Odhhshperations"
+            description="I am an engineering student with a keen interest in human resource management and social media strategy. At EXPE Ad Drives, I oversee HR operations and digital marketing, ensuring seamless team coordination, talent acquisition, and content-driven brand engagement.I oversee social media content, track its performance, and convey essential information to clients, strengthening brand visibility and business relationships."
           />
           <TeamCards
             image={Person3}
             name="Vidisha Munot"
-            description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
-          />
-          <TeamCards
-            image={Person4}
-            name=""
-            description="The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite."
+            role="Software Developer"
+            description="I am a Software Developer at EXPE, responsible for designing, developing, and optimizing software solutions to enhance operational efficiency. My role involves coding, debugging, and implementing innovative technologies to streamline processes and improve system performance. With a strong problem-solving mindset and attention to detail, I ensure seamless functionality and contribute to the company's technological growth and development."
           />
 
          
@@ -203,7 +221,6 @@ function AboutUs() {
         </div>
       )}
 
-      {/* Footer */}
       <Footer />
     </div>
   );
