@@ -120,10 +120,11 @@ function ContactUs() {
         <div className="flex flex-col px-10 w-1/2">
           <div className="text-4xl font-bold">Contact with us</div>
           <div className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg">
-            Hello World
+          +91 8180861415
           </div>
           <div className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg">
-            Hello World
+          expeaddrives@gmail.com
+
           </div>
         </div>
       </div>

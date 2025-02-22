@@ -154,7 +154,7 @@ function PowerOfAdvertisment() {
       </div>
       <div className="flex flex-col justify-around items-center bg-black py-30">
         <div
-          className="font-extrabold text-5xl px-10 py-5 rounded-2xl"
+          className="font-extrabold text-5xl px-10 py-5 rounded-2xl text-black"
           style={{ backgroundColor: "#D9D9D9" }}
         >
           Contact Us
