@@ -22,6 +22,14 @@ app.get("/", (req, res) => {
   res.send("Cookie has been set!");
 });
 
+
+app.post("/sendData",async(req,res)=>{
+  try {
+    const {} = 
+  } catch (error) {
+    
+  }
+})
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });

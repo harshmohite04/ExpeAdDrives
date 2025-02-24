@@ -3,17 +3,22 @@ import Logo from "../assets/logo2.png";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Truck3 from "../assets/truck3.jpg";
-
+import PowerBIReport from "./compo/PowerBIReport";
 import axios from "axios";
 function PowerOfAdvertisment() {
   const [isOn, setIsOn] = useState(false);
+
+  const embedUrl = "https://app.powerbi.com/reportEmbed?reportId=YOUR_REPORT_ID";
+  const accessToken = "YOUR_ACCESS_TOKEN"; // Get this dynamically if required
+
+
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get("http://localhost:3000/", { withCredentials: true });
         console.log(response);
         console.log("hello world");
-        
       } catch (error) {
         console.error(error);
         console.log(error);
@@ -51,6 +56,7 @@ function PowerOfAdvertisment() {
       <div className="flex flex-col justify-start items-center h-screen ">
         <div className="font-bold text-6xl ">POWER OF ADVERTISEMENT</div>
         <div className="text-xl mt-4">In the Form of Fleet</div>
+        <PowerBIReport embedUrl={embedUrl} accessToken={accessToken} />
       </div>
 
       {isOn && (

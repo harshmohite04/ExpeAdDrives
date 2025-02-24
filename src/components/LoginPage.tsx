@@ -33,3 +33,26 @@ function LoginPage() {
 }
 
 export default LoginPage;
+
+
+// import { signInWithGooglePopup } from "../../utils/firebase.utils"
+// import { signInWithGooglePopup } from "../firebase";
+
+// const LoginPage = () => {
+//   const logGoogleUser = async () => {
+//     try {
+//       const userCredential = await signInWithGooglePopup();
+//       console.log("User Info:", userCredential.user);
+//     } catch (error) {
+//       console.error("Error signing in:", error);
+//     }
+//   };
+
+//   return (
+//     <div>
+//       <button onClick={logGoogleUser}>Sign In With Google</button>
+//     </div>
+//   );
+// };
+
+// export default LoginPage;

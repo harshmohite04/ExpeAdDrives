@@ -5,6 +5,7 @@ import PowerOfAdvertisment from "./components/PowerOfAdvertisment";
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
+import PutData from "./components/PutData";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/addData" element={<PutData />} />
       </Routes>
     </BrowserRouter>
   );

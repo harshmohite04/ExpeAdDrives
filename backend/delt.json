@@ -1,0 +1,42 @@
+
+{
+  "ad_analytics_parameters": {
+    "vehicle_performance": {
+      "total_distance_covered_per_vehicle_monthly": 1200,
+      "total_distance_covered_per_vehicle_daily": 40,
+      "route_patterns_per_vehicle": [
+        {
+          "vehicle_id": "V001",
+          "routes": ["Downtown", "Highway A1", "Mall Area"]
+        },
+        {
+          "vehicle_id": "V002",
+          "routes": ["Suburb B", "Industrial Zone", "Stadium"]
+        }
+      ],
+      "heat_maps_of_high_visibility_traffic": [
+        {
+          "location": "Times Square",
+          "average_traffic_count": 50000
+        },
+        {
+          "location": "Central Station",
+          "average_traffic_count": 35000
+        }
+      ]
+    },
+    "campaign_performance": {
+      "estimated_impressions_daily": 15000,
+      "ad_exposure_duration": 8,  
+      "total_possible_conversions": 1200
+    },
+    "cost_per_thousand_impressions": {
+      "campaign_duration": 30,
+      "campaign_timing": "Peak Hours (7 AM - 9 AM, 5 PM - 8 PM)"
+    },
+    "total_active_fleet": {
+      "daily": 45,
+      "monthly": 60
+    }
+  }
+}
