@@ -6,7 +6,7 @@ function TeamCards(props:any) {
         <div className="w-1/3 " data-aos="fade-up-right">
           <img
             src={props.image}
-            alt="fdfd"
+            alt="No Image Found"
             // className="w-100 justify-self-center rounded-4xl"
             className="w-50 justify-self-center rounded-full"
           />

@@ -10,7 +10,9 @@ import Person2 from "../assets/Person2.jpg";
 import Person3 from "../assets/Person3.jpg";
 import Person4 from "../assets/Person4.jpg";
 import Person5 from "../assets/Person5.png"
+import Person6 from "../assets/Person6.jpg"
 import TeamCards from "./compo/TeamCards";
+import TwoTeamCard from "./compo/TwoTeamCard";
 function AboutUs() {
   const [isOn, setIsOn] = useState(false);
 
@@ -166,16 +168,18 @@ function AboutUs() {
           <TeamCards
             image={Person1}
             name="Sayamee Oswal"
-            role=" HR Odhhshperations"
+            role=" HR Operations"
             description="I am an engineering student with a keen interest in human resource management and social media strategy. At EXPE Ad Drives, I oversee HR operations and digital marketing, ensuring seamless team coordination, talent acquisition, and content-driven brand engagement.I oversee social media content, track its performance, and convey essential information to clients, strengthening brand visibility and business relationships."
           />
-          <TeamCards
-            image={Person3}
-            name="Vidisha Munot"
-            role="Software Developer"
-            description="I am a Software Developer at EXPE, responsible for designing, developing, and optimizing software solutions to enhance operational efficiency. My role involves coding, debugging, and implementing innovative technologies to streamline processes and improve system performance. With a strong problem-solving mindset and attention to detail, I ensure seamless functionality and contribute to the company's technological growth and development."
-          />
+          <TwoTeamCard
+          image1={Person3}
+          name1="Vidisha Munot"
+          image2={Person6}
+          name2="Harsh Mohite"
+          role="Software Developer"
 
+          description="I am a Software Developer at EXPE, responsible for designing, developing, and optimizing software solutions to enhance operational efficiency. My role involves coding, debugging, and implementing innovative technologies to streamline processes and improve system performance. With a strong problem-solving mindset and attention to detail, I ensure seamless functionality and contribute to the company's technological growth and development."
+          />
          
         </div>
       </div>

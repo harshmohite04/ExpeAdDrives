@@ -5,11 +5,12 @@ import Footer from "./Footer";
 import Truck3 from "../assets/truck3.jpg";
 import PowerBIReport from "./compo/PowerBIReport";
 import axios from "axios";
+import Home from "./dashboard/ecommerce";
 function PowerOfAdvertisment() {
   const [isOn, setIsOn] = useState(false);
 
-  const embedUrl = "https://app.powerbi.com/reportEmbed?reportId=YOUR_REPORT_ID";
-  const accessToken = "YOUR_ACCESS_TOKEN"; // Get this dynamically if required
+  // const embedUrl = "https://app.powerbi.com/reportEmbed?reportId=YOUR_REPORT_ID";
+  // const accessToken = "YOUR_ACCESS_TOKEN"; // Get this dynamically if required
 
 
 
@@ -56,7 +57,9 @@ function PowerOfAdvertisment() {
       <div className="flex flex-col justify-start items-center h-screen ">
         <div className="font-bold text-6xl ">POWER OF ADVERTISEMENT</div>
         <div className="text-xl mt-4">In the Form of Fleet</div>
-        <PowerBIReport embedUrl={embedUrl} accessToken={accessToken} />
+        {/* <PowerBIReport embedUrl={embedUrl} accessToken={accessToken} /> */}
+
+        {/* <Home/> */}
       </div>
 
       {isOn && (
