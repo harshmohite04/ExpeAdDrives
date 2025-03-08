@@ -21,9 +21,9 @@ function AboutUs() {
   }, []);
 
   return (
-    <div className="min-h-screen text-white bg-zinc-800 relative overflow-y-auto">
+    <div className="min-h-screen text-white  relative overflow-y-auto bg-gradient-to-r from-[#EA2222] to-[#1765C1]">
       {/* Header */}
-      <div className="flex flex-row justify-between px-10 py-1 bg-zinc-800 z-10 items-center">
+      <div className="flex flex-row justify-between px-10 py-1 z-10 items-center">
         <Link to="/" className="w-1/12">
           <img src={Logo} alt="Logo" className="" />
         </Link>
@@ -178,7 +178,7 @@ function AboutUs() {
           name2="Harsh Mohite"
           role="Software Developer"
 
-          description="I am a Software Developer at EXPE, responsible for designing, developing, and optimizing software solutions to enhance operational efficiency. My role involves coding, debugging, and implementing innovative technologies to streamline processes and improve system performance. With a strong problem-solving mindset and attention to detail, I ensure seamless functionality and contribute to the company's technological growth and development."
+          description="We are Software Developers at EXPE, responsible for designing, developing, and optimizing software solutions to enhance operational efficiency. Our role involves coding, debugging, and implementing innovative technologies to streamline processes and improve system performance. With a strong problem-solving mindset and attention to detail, we ensure seamless functionality and contribute to the company's technological growth and development."
           />
          
         </div>

@@ -4,20 +4,20 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Truck3 from "../assets/truck3.jpg";
 import PowerBIReport from "./compo/PowerBIReport";
+import OverViewPage from "./dashboard/OverViewPage";
 import axios from "axios";
-import Home from "./dashboard/ecommerce";
 function PowerOfAdvertisment() {
   const [isOn, setIsOn] = useState(false);
 
   // const embedUrl = "https://app.powerbi.com/reportEmbed?reportId=YOUR_REPORT_ID";
   // const accessToken = "YOUR_ACCESS_TOKEN"; // Get this dynamically if required
 
-
-
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/", { withCredentials: true });
+        const response = await axios.get("http://localhost:3000/", {
+          withCredentials: true,
+        });
         console.log(response);
         console.log("hello world");
       } catch (error) {
@@ -28,8 +28,8 @@ function PowerOfAdvertisment() {
     fetchData();
   }, []);
   return (
-    <div className="h-screen text-white bg-zinc-800 relative overflow-y-scroll ">
-      <div className="flex flex-row justify-between px-10 py-1 top-0 bg-zinc-800 z-10 items-center">
+    <div className="h-screen text-white relative overflow-y-scroll bg-gradient-to-r from-[#EA2222] to-[#1765C1]">
+      <div className="flex flex-row justify-between px-10 py-1 top-0 z-10 items-center">
         <Link to="/" className="w-1/12">
           <img src={Logo} alt="Logo" className="" />
         </Link>
@@ -54,17 +54,16 @@ function PowerOfAdvertisment() {
         ) : null}
       </div>
 
-      <div className="flex flex-col justify-start items-center h-screen ">
+      <div className="flex flex-col justify-start items-center h-screen">
         <div className="font-bold text-6xl ">POWER OF ADVERTISEMENT</div>
         <div className="text-xl mt-4">In the Form of Fleet</div>
         {/* <PowerBIReport embedUrl={embedUrl} accessToken={accessToken} /> */}
-
-        {/* <Home/> */}
       </div>
+      <OverViewPage />
 
       {isOn && (
         <div className="absolute top-0 right-0 w-1/7 bg-opacity-75 flex items-start mt-20 justify-end z-50">
-          <div className="bg-zinc-700 text-white w-3/4 max-w-md p-6 rounded-lg shadow-lg">
+          <div className=" text-white w-3/4 max-w-md p-6 rounded-lg shadow-lg">
             <div className="flex flex-col gap-4">
               <div className="text-lg font-bold">Menu</div>
               <Link to="/">
@@ -132,13 +131,13 @@ function PowerOfAdvertisment() {
         </svg>
       </div>
 
-      <div className="h-screen bg-zinc-600 flex flex-col pt-20 items-center">
+      <div className="h-screen  flex flex-col pt-20 items-center">
         <div className="font-bold text-5xl w-1/2 text-center top-0">
           ADVERTISMENT THAT CHANGED BRAND VALUE AND REACH
         </div>
       </div>
 
-      <div className="h-screen bg-zinc-900 flex flex-col justify-around items-center">
+      <div className="h-screen  flex flex-col justify-around items-center">
         <div className="w-2/3 h-1/4 flex flex-row">
           <div className="w-1/4 bg-zinc-500 h-full"></div>
           <div className="w-3/4 bg-white h-full text-black font-bold text-5xl py-4 px-2">
@@ -161,7 +160,7 @@ function PowerOfAdvertisment() {
       >
         <img src={Truck3} alt="" />
       </div>
-      <div className="flex flex-col justify-around items-center bg-black py-30">
+      <div className="flex flex-col justify-around items-center  py-30">
         <div
           className="font-extrabold text-5xl px-10 py-5 rounded-2xl text-black"
           style={{ backgroundColor: "#D9D9D9" }}

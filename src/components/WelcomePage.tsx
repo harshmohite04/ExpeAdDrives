@@ -4,8 +4,8 @@ import Truck7 from "../assets/truck7.jpg"
 import { Link } from "react-router-dom";
 function WelcomePage() {
   return (
-    <div
-      className="bg-white text-black justify-items-center w-full h-screen content-center "
+    <div 
+      className=" text-black justify-items-center w-full h-screen content-center bg-gradient-to-r from-[#EA2222] to-[#1765C1]"
       // style={{ backgroundImage: `url(${Truck7})`,backgroundSize:"cover", backgroundRepeat:"no-repeat" }}
     >
       <div

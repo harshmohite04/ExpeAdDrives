@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo2.png";
 function Footer() {
   return (
     <div
-      className="h-1/5 justify-around items-center flex flex-row"
+      className="h-1/5 justify-around items-center flex flex-row "
       style={{ backgroundColor: "#D9D9D9" }}
     >
+      {/* <Link to="/"> */}
       <img src={Logo} alt="Logo" className="w-1/12" />
+      {/* </Link> */}
       <div className="">
         <div className=" rounded-xl px-10 w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">
           <div

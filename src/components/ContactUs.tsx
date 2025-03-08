@@ -6,9 +6,9 @@ import Footer from "./Footer";
 function ContactUs() {
   const [isOn, setIsOn] = useState(false);
   return (
-    <div className="h-screen bg-black text-white relative overflow-y-scroll pt-10">
+    <div className="h-screen bg-gradient-to-r from-[#EA2222] to-[#1765C1] text-white relative overflow-y-scroll pt-10">
       <div className="">
-        <div className="flex flex-row justify-between px-10 py-1 top-0 bg-black z-10">
+        <div className="flex flex-row justify-between px-10 py-1 top-0  z-10">
         <Link to="/" className="w-1/12">
         <img src={Logo} alt="Logo" className="" />
         </Link>
@@ -35,7 +35,7 @@ function ContactUs() {
 
         {isOn && (
           <div className="absolute top-0 right-0 w-1/7 bg-opacity-75 flex items-start mt-20 justify-end z-50">
-            <div className="bg-zinc-700 text-white w-3/4 max-w-md p-6 rounded-lg shadow-lg">
+            <div className=" text-white w-3/4 max-w-md p-6 rounded-lg shadow-lg">
               <div className="flex flex-col gap-4">
                 <div className="text-lg font-bold">Menu</div>
                 <Link to="/">
@@ -95,34 +95,34 @@ function ContactUs() {
         <div className="flex flex-col px-10 border-r-2 w-1/2">
           <input
             placeholder="Name"
-            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg placeholder-white"
+            className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg placeholder-white"
           />
           <input
             placeholder="Company"
-            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg placeholder-white"
+            className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg placeholder-white"
           />
           <input
             placeholder="Email"
-            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg placeholder-white"
+            className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg placeholder-white"
           />
           <input
             placeholder="Mobile No"
-            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg placeholder-white"
+            className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg placeholder-white"
           />
           <input
             placeholder="Message"
-            className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg h-32 placeholder-white"
+            className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg h-32 placeholder-white"
           />
-          <div className="bg-zinc-600 mt-4 px-2 py-1 rounded-lg w-1/3 text-center self-center select-none">
+          <div className="bg-zinc-900 mt-4 px-2 py-1 rounded-lg w-1/3 text-center self-center select-none cursor-pointer">
             Submit
           </div>
         </div>
         <div className="flex flex-col px-10 w-1/2">
           <div className="text-4xl font-bold">Contact with us</div>
-          <div className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg">
+          <div className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg">
           +91 8180861415
           </div>
-          <div className="bg-zinc-600 mt-2 px-2 py-1 rounded-lg">
+          <div className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg">
           expeaddrives@gmail.com
 
           </div>

@@ -18,11 +18,11 @@ function Services() {
   const [isOn, setIsOn] = useState(false);
   return (
     <div
-      className="h-screen text-white relative overflow-y-scroll"
+      className="h-screen text-white relative overflow-y-scroll bg-gradient-to-r from-[#EA2222] to-[#1765C1]"
       style={{ backgroundColor: "#505050" }}
     >
       <div
-        className="flex flex-row justify-between px-10 py-1 top-0 bg-zinc-800 z-10 items-center"
+        className="flex flex-row justify-between px-10 py-1 top-0 bg-gradient-to-r from-[#EA2222] to-[#1765C1] z-10 items-center"
         style={{ backgroundColor: "#505050" }}
       >
         <Link to="/" className="w-1/12 ">
@@ -59,7 +59,7 @@ function Services() {
 
       {isOn && (
         <div className="absolute top-0 right-0 w-1/7 bg-opacity-75 flex items-start mt-20 justify-end z-50">
-          <div className="bg-zinc-700 text-white w-3/4 max-w-md p-6 rounded-lg shadow-lg">
+          <div className=" text-white w-3/4 max-w-md p-6 rounded-lg shadow-lg">
             <div className="flex flex-col gap-4">
               <div className="text-lg font-bold">Menu</div>
               <Link to="/">
@@ -113,7 +113,7 @@ function Services() {
         <div className="text-8xl font-black">USING MOBILE BILLBOARDS!</div>
       </div>
 
-      <div className="py-10 bg-black flex flex-col pt-20 items-center">
+      <div className="py-10 flex flex-col pt-20 items-center">
         <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10">
           <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
           <div className="">
@@ -151,11 +151,11 @@ function Services() {
         </div>
       </div>
 
-      <div className="bg-black flex flex-col items-center py-20">
+      <div className=" flex flex-col items-center py-20">
         <div className="text-8xl font-bold">ENGAGE WITH THE SERVICES</div>
         <div className="steps"></div>
         <div
-          className="text-black py-1 px-3 rounded-lg text-2xl my-5"
+          className="text-white py-1 px-3 rounded-lg text-2xl my-5"
           style={{ backgroundColor: "#505050" }}
         >
           <a href={PDF} target="_blank" rel="noopener noreferrer">
@@ -164,7 +164,7 @@ function Services() {
         </div>
 
         <div
-          className="text-black py-1 px-3 rounded-lg text-2xl my-5"
+          className="text-white py-1 px-3 rounded-lg text-2xl my-5"
           style={{ backgroundColor: "#505050" }}
         >
           Contact Us
