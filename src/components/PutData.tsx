@@ -19,7 +19,7 @@ function PutData() {
           className="border-2 text-white placeholder-white px-10"
         />
         <div className="bg-zinc-500">
-          <div className="text-xl">Route Patterns Per Vehicle</div>
+          <div className="text-xl">Route Patterns Per Vehicles</div>
           <input
             type="text"
             name=""
