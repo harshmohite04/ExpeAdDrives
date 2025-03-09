@@ -5,13 +5,19 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 function ContactUs() {
   const [isOn, setIsOn] = useState(false);
+
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("");
+  const [message, setMessage] = useState("");
   return (
     <div className="h-screen bg-gradient-to-r from-[#EA2222] to-[#1765C1] text-white relative overflow-y-scroll pt-10">
       <div className="">
         <div className="flex flex-row justify-between px-10 py-1 top-0  z-10">
-        <Link to="/" className="w-1/12">
-        <img src={Logo} alt="Logo" className="" />
-        </Link>
+          <Link to="/" className="w-1/12">
+            <img src={Logo} alt="Logo" className="" />
+          </Link>
           {!isOn ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -39,19 +45,19 @@ function ContactUs() {
               <div className="flex flex-col gap-4">
                 <div className="text-lg font-bold">Menu</div>
                 <Link to="/">
-              <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
-                Home
-              </div>
-              </Link >
+                  <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
+                    Home
+                  </div>
+                </Link>
                 <Link to="/services">
                   <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
                     Services
                   </div>
                 </Link>
                 <Link to="/aboutus">
-                <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
-                  About Us
-                </div>
+                  <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
+                    About Us
+                  </div>
                 </Link>
                 <Link to="/contactUs">
                   <div className="cursor-pointer transition delay-150 duration-300 ease-in-out hover:translate-y-1 hover:scale-110">
@@ -96,22 +102,33 @@ function ContactUs() {
           <input
             placeholder="Name"
             className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg placeholder-white"
-          />
+            value={name}
+            onChange={(e)=>setName(e.target.value)}
+            />
           <input
             placeholder="Company"
             className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg placeholder-white"
-          />
+            value={company}
+            onChange={(e)=>setCompany(e.target.value)}
+            />
           <input
             placeholder="Email"
             className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg placeholder-white"
-          />
+            value={email}
+            onChange={(e)=>setEmail(e.target.value)}
+            />
           <input
             placeholder="Mobile No"
             className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg placeholder-white"
-          />
+            value={mobileNumber}
+            onChange={(e)=>setMobileNumber(e.target.value)}
+            />
           <input
-            placeholder="Message"
+            placeholder="Message(Max 500 Character)"
             className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg h-32 placeholder-white"
+            value={message}
+            onChange={(e)=>setMessage(e.target.value)}
+            maxLength={500}
           />
           <div className="bg-zinc-900 mt-4 px-2 py-1 rounded-lg w-1/3 text-center self-center select-none cursor-pointer">
             Submit
@@ -120,15 +137,14 @@ function ContactUs() {
         <div className="flex flex-col px-10 w-1/2">
           <div className="text-4xl font-bold">Contact with us</div>
           <div className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg">
-          +91 8180861415
+            +91 81808 61415
           </div>
           <div className="bg-zinc-900 mt-2 px-2 py-1 rounded-lg">
-          expeaddrives@gmail.com
-
+            expeaddrives@gmail.com
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

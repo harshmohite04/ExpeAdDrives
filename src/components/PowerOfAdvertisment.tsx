@@ -6,6 +6,9 @@ import Truck3 from "../assets/truck3.jpg";
 import PowerBIReport from "./compo/PowerBIReport";
 import OverViewPage from "./dashboard/OverViewPage";
 import axios from "axios";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function PowerOfAdvertisment() {
   const [isOn, setIsOn] = useState(false);
 
@@ -26,6 +29,10 @@ function PowerOfAdvertisment() {
       }
     };
     fetchData();
+  }, []);
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: false });
   }, []);
   return (
     <div className="h-screen text-white relative overflow-y-scroll bg-gradient-to-r from-[#EA2222] to-[#1765C1]">
@@ -132,7 +139,7 @@ function PowerOfAdvertisment() {
       </div>
 
       <div className="h-screen  flex flex-col pt-20 items-center">
-        <div className="font-bold text-5xl w-1/2 text-center top-0">
+        <div className="font-bold text-7xl w-1/2 text-center top-0">
           ADVERTISMENT THAT CHANGED BRAND VALUE AND REACH
         </div>
       </div>
@@ -161,12 +168,14 @@ function PowerOfAdvertisment() {
         <img src={Truck3} alt="" />
       </div>
       <div className="flex flex-col justify-around items-center  py-30">
-        <div
-          className="font-extrabold text-5xl px-10 py-5 rounded-2xl text-black"
-          style={{ backgroundColor: "#D9D9D9" }}
-        >
-          Contact Us
-        </div>
+        <Link to="/contactus">
+          <div
+            className="font-extrabold text-5xl px-10 py-5 rounded-2xl text-black"
+            style={{ backgroundColor: "#D9D9D9" }}
+          >
+            Contact Us
+          </div>
+        </Link>
       </div>
       <Footer />
     </div>

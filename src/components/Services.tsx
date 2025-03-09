@@ -162,13 +162,14 @@ function Services() {
             Download Brochure
           </a>
         </div>
-
+<Link to="/contactus">
         <div
           className="text-white py-1 px-3 rounded-lg text-2xl my-5"
           style={{ backgroundColor: "#505050" }}
-        >
+          >
           Contact Us
         </div>
+          </Link>
         <div className="font-bold text-5xl w-1/3 text-center">
           And get the Quote of your Brand Journey
         </div>

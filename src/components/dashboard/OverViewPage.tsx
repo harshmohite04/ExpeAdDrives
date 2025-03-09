@@ -22,7 +22,7 @@ const OverViewPage = () => {
           <StatCard
             name="Total Sales"
             icon={Zap}
-            value="$12,345"
+            value="₹12,345"
             color="#6366F1"
           />
           <StatCard
@@ -40,7 +40,7 @@ const OverViewPage = () => {
           <StatCard
             name="Conversion Rate"
             icon={BarChart2}
-            value="12.5%"
+            value="2.5%"
             color="#10B981"
           />
         </motion.div>

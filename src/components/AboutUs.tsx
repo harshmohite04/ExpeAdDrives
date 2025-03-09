@@ -9,8 +9,8 @@ import Person1 from "../assets/Person1.jpg";
 import Person2 from "../assets/Person2.jpg";
 import Person3 from "../assets/Person3.jpg";
 import Person4 from "../assets/Person4.jpg";
-import Person5 from "../assets/Person5.png"
-import Person6 from "../assets/Person6.jpg"
+import Person5 from "../assets/Person5.png";
+import Person6 from "../assets/Person6.jpg";
 import TeamCards from "./compo/TeamCards";
 import TwoTeamCard from "./compo/TwoTeamCard";
 function AboutUs() {
@@ -52,12 +52,13 @@ function AboutUs() {
 
         <div className="w-full min-h-[200vh] grid place-items-center gap-y-20 ">
           <div
-            className="w-1/2 h-96  grid place-content-center"
+            className=" h-96  grid place-content-center"
             data-aos="fade-up"
           >
-            <span className="text-white">
-              <img src={Truck2} alt="" className="h-4/5 justify-self-center" />
-            </span>
+            <div className=" text-white text-8xl font-light">
+              {/* <img src={Truck2} alt="" className="h-4/5 justify-self-center" /> */}
+              Making your brand unforgettable!
+            </div>
           </div>
           <div
             className="w-1/2 h-96  grid place-content-center"
@@ -117,9 +118,7 @@ function AboutUs() {
             </span>
           </div>
           <div className="w-1/2 grid place-content-center" data-aos="fade-up">
-            <span className="text-white text-6xl font-bold">
-              Our Team
-            </span>
+            <span className="text-white text-6xl font-bold">Our Team</span>
           </div>
 
           {/* <div
@@ -139,48 +138,41 @@ function AboutUs() {
             <div className=" py-10 px-5 text-center" data-aos="fade-up-left">The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite.</div>
             </div>
             </div> */}
-            <TeamCards
-              image={Person5}
-              name="Omkar Kolhe"
-              role="Founder,CEO"
-              description="I am an engineering student with a keen interest in human resource management and social media strategy. At EXPE Ad Drives, I oversee HR operations and digital marketing, ensuring seamless team coordination, talent acquisition, and content-driven brand engagement. My role involves strategizing and optimizing marketing efforts to expand audience reach and enhance brand visibility."
-              />
-            <TeamCards
-              image={Person2}
-              name="Prajwal Guttal" 
-              role="Co-Founder,COO"
-              description="As the Co-Founder and COO, I drive the company's daily operations with a strategic, results-driven approach. I am responsible for ensuring operational efficiency, aligning business activities with organizational goals, and fostering a seamless workflow. With strong expertise in business management and team coordination, I provide strategic direction, optimize processes, and drive sustainable growth, contributing to the company’s long-term success."
-            />
-            
-            <TeamCards
-              image={Person4}
-              name="Mohit Vishwakarma"
-              role="Fleet Executive"
-              description="I serve as a Fleet Executive, managing and coordinating fleet operations. My role involves overseeing vehicle logistics, optimizing efficiency, and maintaining seamless communication between drivers and the company. With a keen eye for detail and strong problem-solving skills, I ensure operational compliance and continuously strive to enhance overall fleet performance."
-            />
-            <TeamCards
-              image={Person4}
-              name="Pranit Sonawale"
-              role="Head of Marketing"
-              description="As the Head of Marketing and Client Relations, I am responsible for enhancing brand presence and fostering strong client partnerships. With a background in a service-based family business, I possess a deep understanding of brand promotion and customer engagement. I actively manage client meetings, accompany the CEO for key discussions, and ensure seamless communication. My role involves strategizing and optimizing marketing efforts to expand audience reach and enhance brand visibility.
-"
-            />
           <TeamCards
-            image={Person1}
-            name="Sayamee Oswal"
-            role=" HR Operations"
-            description="I am an engineering student with a keen interest in human resource management and social media strategy. At EXPE Ad Drives, I oversee HR operations and digital marketing, ensuring seamless team coordination, talent acquisition, and content-driven brand engagement.I oversee social media content, track its performance, and convey essential information to clients, strengthening brand visibility and business relationships."
+            image={Person5}
+            name="Omkar Kolhe"
+            role="Founder,CEO"
+            description="I am an engineering student with a keen interest in human resource management and social media strategy. At EXPE Ad Drives, I oversee HR operations and digital marketing, ensuring seamless team coordination, talent acquisition, and content-driven brand engagement. My role involves strategizing and optimizing marketing efforts to expand audience reach and enhance brand visibility."
           />
-          <TwoTeamCard
-          image1={Person3}
-          name1="Vidisha Munot"
-          image2={Person6}
-          name2="Harsh Mohite"
-          role="Software Developer"
+          <TeamCards
+            image={Person2}
+            name="Prajwal Guttal"
+            role="Co-Founder,COO"
+            description="As the Co-Founder and COO, I drive the company's daily operations with a strategic, results-driven approach. I am responsible for ensuring operational efficiency, aligning business activities with organizational goals, and fostering a seamless workflow. With strong expertise in business management and team coordination, I provide strategic direction, optimize processes, and drive sustainable growth, contributing to the company’s long-term success."
+          />
 
-          description="We are Software Developers at EXPE, responsible for designing, developing, and optimizing software solutions to enhance operational efficiency. Our role involves coding, debugging, and implementing innovative technologies to streamline processes and improve system performance. With a strong problem-solving mindset and attention to detail, we ensure seamless functionality and contribute to the company's technological growth and development."
+          <TeamCards
+            image={Person4}
+            name="Mohit Vishwakarma"
+            role="Fleet Executive"
+            description="I serve as a Fleet Executive, managing and coordinating fleet operations. My role involves overseeing vehicle logistics, optimizing efficiency, and maintaining seamless communication between drivers and the company. With a keen eye for detail and strong problem-solving skills, I ensure operational compliance and continuously strive to enhance overall fleet performance."
           />
-         
+          <TeamCards
+            image={Person4}
+            name="Pranit Sonawale"
+            role="Head of Marketing"
+            description="As the Head of Marketing and Client Relations, I am responsible for enhancing brand presence and fostering strong client partnerships. With a background in a service-based family business, I possess a deep understanding of brand promotion and customer engagement. I actively manage client meetings, accompany the CEO for key discussions, and ensure seamless communication. My role involves strategizing and optimizing marketing efforts to expand audience reach and enhance brand visibility.
+"
+          />
+          
+          <TwoTeamCard
+            image1={Person3}
+            name1="Vidisha Munot"
+            image2={Person6}
+            name2="Harsh Mohite"
+            role="Software Developer"
+            description="We are Software Developers at EXPE, responsible for designing, developing, and optimizing software solutions to enhance operational efficiency. Our role involves coding, debugging, and implementing innovative technologies to streamline processes and improve system performance. With a strong problem-solving mindset and attention to detail, we ensure seamless functionality and contribute to the company's technological growth and development."
+          />
         </div>
       </div>
 
