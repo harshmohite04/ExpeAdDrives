@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Truck1 from "../assets/truck1.jpg";
 import Footer from "./Footer";
 import PDF from "../assets/Brochure.pdf";
+import ScrollFlip from "./compo/ScrollFlip";
 // import { motion } from "framer-motion";
 function Services() {
   // const steps = [
@@ -115,41 +116,42 @@ function Services() {
 
       <div className="py-10 flex flex-col pt-20 items-center">
         <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10">
-          <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
+          {/* <img src={Truck1} className="w-1/2 rounded-2xl" alt="" /> */}
           <div className="">
-            <div className="font-bold text-7xl text-center">We Bring</div>
+            <div className="font-bold text-7xl text-center py-20">We Bring</div>
             <div className="font-bold text-7xl text-center">EXPErience</div>
           </div>
         </div>
         <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
           <div className="">
-            <div className="font-bold text-7xl text-center">We Bring</div>
+            {/* <div className="font-bold text-7xl text-center">We Bring</div> */}
             <div className="font-bold text-7xl text-center">EXPEdite</div>
           </div>
-          <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
+          {/* <img src={Truck1} className="w-1/2 rounded-2xl" alt="" /> */}
         </div>
         <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
-          <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
+          {/* <img src={Truck1} className="w-1/2 rounded-2xl" alt="" /> */}
           <div className="">
-            <div className="font-bold text-7xl text-center">We Bring</div>
+            {/* <div className="font-bold text-7xl text-center">We Bring</div> */}
             <div className="font-bold text-7xl text-center">EXPEdition</div>
           </div>
         </div>
         <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
           <div className="">
-            <div className="font-bold text-7xl text-center">We Bring</div>
+            {/* <div className="font-bold text-7xl text-center">We Bring</div> */}
             <div className="font-bold text-7xl text-center">EXPErties</div>
           </div>
-          <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
+          {/* <img src={Truck1} className="w-1/2 rounded-2xl" alt="" /> */}
         </div>
         <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
-          <img src={Truck1} className="w-1/2 rounded-2xl" alt="" />
+          {/* <img src={Truck1} className="w-1/2 rounded-2xl" alt="" /> */}
           <div className="">
-            <div className="font-bold text-7xl text-center">We Bring</div>
+            {/* <div className="font-bold text-7xl text-center">We Bring</div> */}
             <div className="font-bold text-7xl text-center">EXPEctations</div>
           </div>
         </div>
       </div>
+{/* <ScrollFlip/> */}
 
       <div className=" flex flex-col items-center py-20">
         <div className="text-8xl font-bold">ENGAGE WITH THE SERVICES</div>

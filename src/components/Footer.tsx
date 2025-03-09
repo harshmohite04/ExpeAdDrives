@@ -1,13 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/logo2.png";
 function Footer() {
+  const navigate = useNavigate();
   return (
     <div
       className="h-1/5 justify-around items-center flex flex-row "
       style={{ backgroundColor: "#D9D9D9" }}
     >
-      {/* <Link to="/"> */}
-      <img src={Logo} alt="Logo" className="w-1/12" />
+      {/* <Link to="/" > */}
+      <img src={Logo} alt="Logo" className="w-1/12" onClick={()=>{
+        navigate('/');
+
+      }}/>
       {/* </Link> */}
       <div className="">
         <div className=" rounded-xl px-10 w-full h-auto py-8 flex items-center justify-center gap-2 flex-wrap">

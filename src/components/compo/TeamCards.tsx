@@ -13,7 +13,7 @@ function TeamCards(props:any) {
           <div className="text-center text-2xl">{props.name} </div>
           <div className="text-center text-2xl">{props.role} </div>
         </div>
-        <div className="w-2/3  py-10 px-5 text-center" data-aos="fade-up-left">
+        <div className="w-2/3  py-10 px-5 text-center content-center" data-aos="fade-up-left">
           {props.description}
         </div>
       </div>

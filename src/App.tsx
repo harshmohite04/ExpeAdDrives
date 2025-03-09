@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
 import PutData from "./components/PutData";
+import DashboardWhenlogIn from "./components/DashboardWhenlogIn";
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/addData" element={<PutData />} />
+        <Route path="/dashboardWhenlogIn" element={<DashboardWhenlogIn />} />
       </Routes>
     </BrowserRouter>
   );

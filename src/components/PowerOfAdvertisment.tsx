@@ -3,7 +3,7 @@ import Logo from "../assets/logo2.png";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Truck3 from "../assets/truck3.jpg";
-import PowerBIReport from "./compo/PowerBIReport";
+// import PowerBIReport from "./compo/PowerBIReport";
 import OverViewPage from "./dashboard/OverViewPage";
 import axios from "axios";
 import AOS from "aos";
@@ -66,7 +66,7 @@ function PowerOfAdvertisment() {
         <div className="text-xl mt-4">In the Form of Fleet</div>
         {/* <PowerBIReport embedUrl={embedUrl} accessToken={accessToken} /> */}
       </div>
-      <OverViewPage />
+      {/* <OverViewPage /> */}
 
       {isOn && (
         <div className="absolute top-0 right-0 w-1/7 bg-opacity-75 flex items-start mt-20 justify-end z-50">
@@ -139,50 +139,193 @@ function PowerOfAdvertisment() {
       </div>
 
       <div className="h-screen  flex flex-col pt-20 items-center">
-        <div className="font-bold text-7xl w-1/2 text-center top-0">
+        <div className="font-bold text-7xl w-1/2 text-center top-0 pb-20">
           ADVERTISMENT THAT CHANGED BRAND VALUE AND REACH
+        </div>
+        <div className="flex justify-around  " style={{ width: "80%" }}>
+          <div className="">
+            <div className="">
+              <div
+                className="w-1/2 h-50 grid place-content-center justify-self-center"
+                data-aos="fade-up"
+              >
+                <span className="text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-50 animate-blink"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div className="text-2xl text-center w-5/6 justify-self-center">
+              High Recall Rates
+            </div>
+          </div>
+          <div className="">
+            <div
+              className="w-1/2 h-50  grid place-content-center  justify-self-center"
+              data-aos="fade-up"
+            >
+              <span className="text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="size-50"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <div className="text-2xl text-center w-5/6 justify-self-center">
+              Demographic Route Planning
+            </div>
+          </div>
+          <div className="">
+            <div
+              className="w-1/2 h-50  grid place-content-center  justify-self-center"
+              data-aos="fade-up"
+            >
+              <span className="text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="size-50"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <div className="text-2xl text-center  w-5/6 justify-self-center">
+              Simplified Execution
+            </div>
+          </div>
+          <div className="">
+            <div
+              className="w-1/2 h-50  grid place-content-center  justify-self-center"
+              data-aos="fade-up"
+            >
+              <span className="text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="size-50"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <div className="text-2xl text-center w-5/6 justify-self-center">
+              Get a proved Assumption of Impression
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="h-screen  flex flex-col justify-around items-center">
-        <div className="w-2/3 h-1/4 flex flex-row">
-          <div className="w-1/4 bg-zinc-500 h-full">
-            <div className="text-xl font-semibold">High Visibility</div>
-            <div className="text-xl font-semibold">Cost effective</div>
-            <div className="text-xl font-semibold">Targeted reach</div>
-            <div className="text-xl font-semibold">Additional income for vechile owners</div>
+        {/* <div className="w-3/5 h-1/5 flex flex-row">
+          <div className="w-1/4  h-full">
+            <div className="text-2xl font-bold">• High Visibility</div>
+            <div className="text-2xl font-bold">• Cost effective</div>
+            <div className="text-2xl font-bold">• Targeted reach</div>
+            <div className="text-2xl font-bold">• Additional income for vechile owners</div>
           </div>
-          <div className="w-3/4 bg-white h-full text-black font-bold text-5xl py-4 px-2">
+          <div className="w-3/4  text-black font-bold text-center text-7xl py-4 px-2">
             WHY IS IT BETTER
           </div>
         </div>
-        <div className="w-2/3 h-1/4  flex flex-row">
+        <div className="w-2/3 h-1/5  flex flex-row">
 
-          <div className="w-3/4 text-end py-4 px-2 bg-white h-full text-black font-bold text-5xl ">
+          <div className="w-3/5  py-4 px-2  h-full text-black font-bold text-7xl text-center ">
             WHAT YOU GET
           </div>
-          <div className="w-1/4 bg-zinc-500 h-full">
-            <div className="">
-              Wide Audience engagement with moving billboards
+          <div className="w-1/2 pl-4">
+            <div className="text-2xl font-bold">
+            • Wide Audience engagement with moving billboards
             </div>
-            <div className="">
-              Customizable Campaigns tailored to business user
+            <div className="text-2xl font-bold">
+            • Customizable Campaigns tailored to business user
             </div>
-            <div className="">Real time Analytics to track and performance</div>
-            <div className="">Scalable solutions for business all sizes</div>
+            <div className="text-2xl font-bold">• Real time Analytics to track and performance</div>
+            <div className="text-2xl font-bold">• Scalable solutions for business all sizes</div>
+          </div>
+        </div> */}
+
+        <div className="flex text-black justify-center">
+          <div className=" " style={{ width: "30%" }}>
+            <div className="text-3xl font-semibold">• High Visibility</div>
+            <div className="text-3xl font-semibold">• Cost effective</div>
+            <div className="text-3xl font-semibold">• Targeted reach</div>
+            <div className="text-3xl font-semibold">
+              • Additional income for vechile owners
+            </div>
+          </div>
+          <div className="text-7xl font-black p-10">WHY IS IT BETTER</div>
+        </div>
+        <div className="flex text-black justify-center">
+          <div className="text-7xl font-black  p-10">WHAT YOU GET</div>
+          <div className="ml-10" style={{ width: "40%" }}>
+            <div className="text-3xl font-semibold">
+              • Wide Audience engagement with moving billboards
+            </div>
+            <div className="text-3xl font-semibold">
+              {" "}
+              • Customizable Campaigns tailored to business user
+            </div>
+            <div className="text-3xl font-semibold">
+              • Real time Analytics to track and performance
+            </div>
+            <div className="text-3xl font-semibold">
+              • Scalable solutions for business all sizes
+            </div>
           </div>
         </div>
-        <div className="text-6xl text-white font-bold ">
+
+        <div className="text-6xl  text-white font-bold ">
           LEARN ABOUT THE SERVICES
         </div>
       </div>
-      <div
+      {/* <div
         className="justify-self-center items-center"
         style={{ backgroundColor: "#000000" }}
       >
         <img src={Truck3} alt="" />
-      </div>
-      <div className="flex flex-col justify-around items-center  py-30">
+      </div> */}
+      <div className="flex flex-col justify-around items-center mb-10">
         <Link to="/contactus">
           <div
             className="font-extrabold text-5xl px-10 py-5 rounded-2xl text-black"

@@ -9,19 +9,20 @@ function LoginPage() {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    try {
-      const response = await axios.post('http://localhost:3000/login', {
-        username: userName,
-        password: password,
-      });
+    // try {
+    //   const response = await axios.post('http://localhost:3000/login', {
+    //     username: userName,
+    //     password: password,
+    //   });
 
-      localStorage.setItem('token', response.data.token);
-      console.log(response.data.token);
+    //   localStorage.setItem('token', response.data.token);
+    //   console.log(response.data.token);
       
-      navigate('/');
-    } catch (error) {
-      alert('Invalid credentials');
-    }
+    //   navigate('/dashboardWhenlogIn');
+    // } catch (error) {
+      //   alert('Invalid credentials');
+      // }
+        navigate('/dashboardWhenlogIn');
   };
 
   return (

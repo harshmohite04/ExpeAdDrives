@@ -11,6 +11,7 @@ import Person3 from "../assets/Person3.jpg";
 import Person4 from "../assets/Person4.jpg";
 import Person5 from "../assets/Person5.png";
 import Person6 from "../assets/Person6.jpg";
+import Person7 from "../assets/Person7.jpg";
 import TeamCards from "./compo/TeamCards";
 import TwoTeamCard from "./compo/TwoTeamCard";
 function AboutUs() {
@@ -79,10 +80,10 @@ function AboutUs() {
             </span>
           </div>
           <div
-            className="w-1/2 h-96  grid place-content-center"
+            className="w-2/3 h-96  grid place-content-center"
             data-aos="fade-up"
           >
-            <span className="text-white text-2xl">
+            <span className="text-white text-3xl">
               Transforming Mobility into Marketing! We don’t just advertise—we
               move brands forward! Imagine your brand on wheels, reaching the
               right audience at the right time. Our mission is simple: turn
@@ -155,7 +156,7 @@ function AboutUs() {
             description="I manage and coordinate fleet operations to ensure smooth logistics and efficiency. I oversee vehicle deployment, maintain seamless communication with drivers, and optimize fleet performance. With a focus on operational compliance and problem-solving, I work to enhance overall efficiency and keep our mobile advertising network running flawlessly."
           />
           <TeamCards
-            image={Person4}
+            image={Person7  }
             name="Pranit Sonawale"
             role="Head of Marketing"
             description="I drive brand growth and client engagement by crafting impactful marketing strategies. I oversee client relations, manage key discussions, and ensure seamless communication to strengthen partnerships. With a deep understanding of brand promotion, I work to expand our reach and enhance visibility, making every campaign a success."
