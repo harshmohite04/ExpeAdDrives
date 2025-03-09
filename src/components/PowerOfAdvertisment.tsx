@@ -146,16 +146,31 @@ function PowerOfAdvertisment() {
 
       <div className="h-screen  flex flex-col justify-around items-center">
         <div className="w-2/3 h-1/4 flex flex-row">
-          <div className="w-1/4 bg-zinc-500 h-full"></div>
+          <div className="w-1/4 bg-zinc-500 h-full">
+            <div className="text-xl font-semibold">High Visibility</div>
+            <div className="text-xl font-semibold">Cost effective</div>
+            <div className="text-xl font-semibold">Targeted reach</div>
+            <div className="text-xl font-semibold">Additional income for vechile owners</div>
+          </div>
           <div className="w-3/4 bg-white h-full text-black font-bold text-5xl py-4 px-2">
             WHY IS IT BETTER
           </div>
         </div>
         <div className="w-2/3 h-1/4  flex flex-row">
+
           <div className="w-3/4 text-end py-4 px-2 bg-white h-full text-black font-bold text-5xl ">
             WHAT YOU GET
           </div>
-          <div className="w-1/4 bg-zinc-500 h-full"></div>
+          <div className="w-1/4 bg-zinc-500 h-full">
+            <div className="">
+              Wide Audience engagement with moving billboards
+            </div>
+            <div className="">
+              Customizable Campaigns tailored to business user
+            </div>
+            <div className="">Real time Analytics to track and performance</div>
+            <div className="">Scalable solutions for business all sizes</div>
+          </div>
         </div>
         <div className="text-6xl text-white font-bold ">
           LEARN ABOUT THE SERVICES

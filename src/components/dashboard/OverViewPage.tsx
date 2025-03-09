@@ -1,11 +1,9 @@
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
-import Header from "./components/common/Header";
 import StatCard from "./components/common/StatCard";
-import SalesOverviewChart from "./components/overview/SalesOverviewChart";
-import CategoryDistributionChart from "./components/overview/CategoryDistributionChart";
-import SalesChannelChart from "./components/overview/SalesChannelChart";
+import VehicleDistanceTable from "./components/overview/VehicleDistanceTable";
+import AdExposureTable from "./components/overview/AdExposureTable";
 
 const OverViewPage = () => {
   return (
@@ -48,9 +46,8 @@ const OverViewPage = () => {
         {/* CHARTS */}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <SalesOverviewChart />
-          <CategoryDistributionChart />
-          <SalesChannelChart />
+          <VehicleDistanceTable />
+          <AdExposureTable />
         </div>
       </main>
     </div>

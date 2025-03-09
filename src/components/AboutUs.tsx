@@ -51,10 +51,7 @@ function AboutUs() {
         <div className="font-bold text-6xl mb-10">Our Mission</div>
 
         <div className="w-full min-h-[200vh] grid place-items-center gap-y-20 ">
-          <div
-            className=" h-96  grid place-content-center"
-            data-aos="fade-up"
-          >
+          <div className=" h-96  grid place-content-center" data-aos="fade-up">
             <div className=" text-white text-8xl font-light">
               {/* <img src={Truck2} alt="" className="h-4/5 justify-self-center" /> */}
               Making your brand unforgettable!
@@ -142,36 +139,35 @@ function AboutUs() {
             image={Person5}
             name="Omkar Kolhe"
             role="Founder,CEO"
-            description="I am an engineering student with a keen interest in human resource management and social media strategy. At EXPE Ad Drives, I oversee HR operations and digital marketing, ensuring seamless team coordination, talent acquisition, and content-driven brand engagement. My role involves strategizing and optimizing marketing efforts to expand audience reach and enhance brand visibility."
+            description="As the Founder and CEO of EXPE Ad-Drives, I lead the mission to transform commercial vehicles into powerful mobile advertising platforms. By integrating strategic planning, team coordination, and innovative brand placement, we help businesses maximize visibility and audience engagement through high-impact, on-the-move advertising solutions."
           />
           <TeamCards
             image={Person2}
             name="Prajwal Guttal"
             role="Co-Founder,COO"
-            description="As the Co-Founder and COO, I drive the company's daily operations with a strategic, results-driven approach. I am responsible for ensuring operational efficiency, aligning business activities with organizational goals, and fostering a seamless workflow. With strong expertise in business management and team coordination, I provide strategic direction, optimize processes, and drive sustainable growth, contributing to the company’s long-term success."
+            description="I ensure smooth day-to-day operations and strategic execution. My focus is on optimizing workflows, enhancing operational efficiency, and aligning business activities with our vision. With expertise in business management and team coordination, I drive process improvements and sustainable growth, ensuring EXPE Ad-Drives scales effectively while delivering impactful advertising solutions."
           />
 
           <TeamCards
             image={Person4}
             name="Mohit Vishwakarma"
             role="Fleet Executive"
-            description="I serve as a Fleet Executive, managing and coordinating fleet operations. My role involves overseeing vehicle logistics, optimizing efficiency, and maintaining seamless communication between drivers and the company. With a keen eye for detail and strong problem-solving skills, I ensure operational compliance and continuously strive to enhance overall fleet performance."
+            description="I manage and coordinate fleet operations to ensure smooth logistics and efficiency. I oversee vehicle deployment, maintain seamless communication with drivers, and optimize fleet performance. With a focus on operational compliance and problem-solving, I work to enhance overall efficiency and keep our mobile advertising network running flawlessly."
           />
           <TeamCards
             image={Person4}
             name="Pranit Sonawale"
             role="Head of Marketing"
-            description="As the Head of Marketing and Client Relations, I am responsible for enhancing brand presence and fostering strong client partnerships. With a background in a service-based family business, I possess a deep understanding of brand promotion and customer engagement. I actively manage client meetings, accompany the CEO for key discussions, and ensure seamless communication. My role involves strategizing and optimizing marketing efforts to expand audience reach and enhance brand visibility.
-"
+            description="I drive brand growth and client engagement by crafting impactful marketing strategies. I oversee client relations, manage key discussions, and ensure seamless communication to strengthen partnerships. With a deep understanding of brand promotion, I work to expand our reach and enhance visibility, making every campaign a success."
           />
-          
+
           <TwoTeamCard
             image1={Person3}
             name1="Vidisha Munot"
             image2={Person6}
             name2="Harsh Mohite"
             role="Software Developer"
-            description="We are Software Developers at EXPE, responsible for designing, developing, and optimizing software solutions to enhance operational efficiency. Our role involves coding, debugging, and implementing innovative technologies to streamline processes and improve system performance. With a strong problem-solving mindset and attention to detail, we ensure seamless functionality and contribute to the company's technological growth and development."
+            description="we specialize in designing, developing, and optimizing software solutions to drive operational efficiency. Our roles involve coding, debugging, and integrating innovative technologies to streamline processes and enhance system performance. With a problem-solving mindset and keen attention to detail, we ensure seamless functionality, contributing to EXPE’s technological growth and innovation."
           />
         </div>
       </div>
@@ -179,7 +175,7 @@ function AboutUs() {
       {/* Side Menu */}
       {isOn && (
         <div className="absolute top-0 right-0 w-1/7 bg-opacity-75 flex items-start mt-20 justify-end z-50">
-          <div className="bg-zinc-700 text-white w-3/4 max-w-md p-6 rounded-lg shadow-lg">
+          <div className=" text-white w-3/4 max-w-md p-6 rounded-lg shadow-lg">
             <div className="flex flex-col gap-4">
               <div className="text-lg font-bold">Menu</div>
               <Link to="/">
