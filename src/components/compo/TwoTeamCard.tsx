@@ -7,7 +7,7 @@ function TwoTeamCard(props: any) {
           <div className="justify-items-center w-1/2">
             <img
               src={props.image1}
-              className="rounded-full w-1/2"
+              className="rounded-full w-1/3"
               alt="No Image Found"
             />
             <div className="text-center text-2xl">{props.name1}</div>
@@ -15,7 +15,7 @@ function TwoTeamCard(props: any) {
           <div className="justify-items-center w-1/2">
             <img
               src={props.image2}
-              className="rounded-full w-1/2"
+              className="rounded-full w-1/3"
               alt="No Image Found"
             />
             <div className="text-center text-2xl">{props.name2}</div>
