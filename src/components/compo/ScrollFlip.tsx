@@ -1,49 +1,41 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
-
-import Truck1 from "../../assets/truck1.jpg"
-const ScrollFlip = () => {
-  const [activeText, setActiveText] = useState("Experience");
-
-  const words = [
-    "Experience",
-    "Expedite",
-    "Expedition",
-    "Expertise",
-    "Expectations",
-  ];
+const TextSlider = () => {
+  const texts = ["EXPERIENCE", "EXPEDITE", "EXPLORE", "EXCEED"];
+  const [index, setIndex] = useState(0);
+  const [lastScrollTime, setLastScrollTime] = useState(Date.now());
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const index = Math.min(
-        Math.floor(scrollPosition / 300), // Change text every 300px scroll
-        words.length - 1
-      );
-      setActiveText(words[index]);
+    const handleScroll = (event) => {
+      const now = Date.now();
+      if (now - lastScrollTime < 1000) return; // Prevent fast scrolling
+
+      if (event.deltaY > 50 && index < texts.length - 1) {
+        setIndex((prevIndex) => prevIndex + 1);
+      } else if (event.deltaY < -50 && index > 0) {
+        setIndex((prevIndex) => prevIndex - 1);
+      }
+
+      setLastScrollTime(now);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("wheel", handleScroll);
+
+    return () => window.removeEventListener("wheel", handleScroll);
+  }, [index, lastScrollTime]);
 
   return (
-    <div className="py-10 flex flex-col pt-20 items-center h-[200vh]">
-      <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 sticky top-20">
-        {/* <img
-          src={Truck1}
-          className="w-1/2 rounded-2xl transition-all duration-500"
-          alt=""
-        /> */}
-        <div className="">
-          <div className="font-bold text-7xl text-center">We Bring</div>
-          <div className="font-bold text-7xl text-center text-blue-500 transition-all duration-500">
-            {activeText}
-          </div>
-        </div>
+    <div style={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+      <h1 style={{ position: "fixed", top: "40%", fontSize: "5rem", fontWeight: "bold" }}>
+        WE BRING
+      </h1>
+      <div style={{ marginTop: "5rem", transition: "opacity 0.5s ease-in-out" }}>
+        <h2 style={{ fontSize: "4rem", fontWeight: "lighter" }}>
+          {texts[index]}
+        </h2>
       </div>
     </div>
   );
 };
 
-export default ScrollFlip;
+export default TextSlider;

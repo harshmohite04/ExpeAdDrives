@@ -7,6 +7,7 @@ import ContactUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
 import PutData from "./components/PutData";
 import DashboardWhenlogIn from "./components/DashboardWhenlogIn";
+import ScrollFlip from "./components/compo/ScrollFlip";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/welcome" element={<WelcomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/services" element={<Services />} />
+        {/* <Route path="/services" element={<ScrollFlip />} /> */}
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/addData" element={<PutData />} />

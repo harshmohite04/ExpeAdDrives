@@ -1,12 +1,42 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../assets/logo2.png";
 import { Link } from "react-router-dom";
 import Truck1 from "../assets/truck1.jpg";
 import Footer from "./Footer";
 import PDF from "../assets/Brochure.pdf";
 import ScrollFlip from "./compo/ScrollFlip";
+import { motion, AnimatePresence } from "framer-motion";
 function Services() {
+  const texts = [
+    "EXPErience",
+    "EXPEdite",
+    "EXPEdition",
+    "EXPErtise",
+    "EXPEctations",
+  ];
+  const [index, setIndex] = useState(0);
+  const [lastScrollTime, setLastScrollTime] = useState(0);
 
+  useEffect(() => {
+    const handleScroll = (event) => {
+      const now = Date.now();
+      if (now - lastScrollTime < 1) return; // Prevent fast scrolling
+
+      if (event.deltaY > 50 && index < texts.length - 1) {
+        setIndex((prevIndex) => prevIndex + 1);
+        setLastScrollTime(now);
+      } else if (event.deltaY < -50 && index > 0) {
+        setIndex((prevIndex) => prevIndex - 1);
+        setLastScrollTime(now);
+      }
+    };
+
+    window.addEventListener("wheel", handleScroll);
+
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+    };
+  }, [index, lastScrollTime]);
   const [isOn, setIsOn] = useState(false);
   return (
     <div
@@ -106,31 +136,30 @@ function Services() {
       </div>
 
       <div className="py-10 flex flex-col pt-20 items-center">
-        <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10">
-          <div className="">
-            <div className="font-bold text-7xl text-center py-20">We Bring</div>
-            <div className="font-bold text-7xl text-center">EXPErience</div>
-          </div>
-        </div>
-        <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
-          <div className="">
-            <div className="font-bold text-7xl text-center">EXPEdite</div>
-          </div>
-        </div>
-        <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
-          <div className="">
-            <div className="font-bold text-7xl text-center">EXPEdition</div>
-          </div>
-        </div>
-        <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
-          <div className="">
-            <div className="font-bold text-7xl text-center">EXPErties</div>
-          </div>
-        </div>
-        <div className="flex flex-row items-center justify-around px-10 w-4/5 my-10 ">
-          <div className="">
-            <div className="font-bold text-7xl text-center">EXPEctations</div>
-          </div>
+        <div
+          style={{
+            height: "100vh",
+            padding: "50px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            fontSize: 50,
+          }}
+        >
+          <h1 className="text-8xl font-black">We Bring</h1>
+          <AnimatePresence mode="wait">
+            <motion.h2
+              key={texts[index]}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+              className="text-8xl font-black text-blue-300"
+            >
+              {texts[index]}
+            </motion.h2>
+          </AnimatePresence>
         </div>
       </div>
 
@@ -145,14 +174,14 @@ function Services() {
             Download Brochure
           </a>
         </div>
-<Link to="/contactus">
-        <div
-          className="text-white py-1 px-3 rounded-lg text-2xl my-5"
-          style={{ backgroundColor: "#505050" }}
+        <Link to="/contactus">
+          <div
+            className="text-white py-1 px-3 rounded-lg text-2xl my-5"
+            style={{ backgroundColor: "#505050" }}
           >
-          Contact Us
-        </div>
-          </Link>
+            Contact Us
+          </div>
+        </Link>
         <div className="font-bold text-5xl w-1/3 text-center">
           And get the Quote of your Brand Journey
         </div>
