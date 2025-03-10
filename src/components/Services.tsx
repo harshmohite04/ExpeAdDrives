@@ -155,7 +155,7 @@ function Services() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
-              className="text-8xl font-black text-blue-300"
+              className="text-8xl font-black text-blue"
             >
               {texts[index]}
             </motion.h2>
