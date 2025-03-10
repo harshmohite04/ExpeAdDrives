@@ -119,23 +119,7 @@ function AboutUs() {
             <span className="text-white text-6xl font-bold">Our Team</span>
           </div>
 
-          {/* <div
-            className="w-2/3 grid bg-black py-10 rounded-2xl"
-            data-aos="fade-up"
-          >
-            <div className="flex px-10">
-            <div className="w-2/3" data-aos="fade-up-right">
-            <img
-            src={Image1}
-            alt="fdfd"
-            className="w-100 justify-self-center rounded-full"
-            
-            />
-            <div className="text-center text-2xl">Harsh Mohite </div>
-            </div>
-            <div className=" py-10 px-5 text-center" data-aos="fade-up-left">The golden sun dipped below the horizon, painting the sky with hues of orange and purple. A gentle breeze rustled through the towering trees, whispering secrets of the past. Somewhere in the distance, the sound of laughter echoed, blending with the rhythmic chirping of crickets. In that moment, time stood still, and everything felt infinite.</div>
-            </div>
-            </div> */}
+          
           <TeamCards
             image={Person5}
             name="Omkar Kolhe"

@@ -8,6 +8,7 @@ import OverViewPage from "./dashboard/OverViewPage";
 import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 function PowerOfAdvertisment() {
   const [isOn, setIsOn] = useState(false);
@@ -33,6 +34,7 @@ function PowerOfAdvertisment() {
 
   useEffect(() => {
     AOS.init({ duration: 800, once: false });
+    AOS.refresh();
   }, []);
   return (
     <div className="h-screen text-white relative overflow-y-scroll bg-gradient-to-r from-[#EA2222] to-[#1765C1]">
@@ -142,40 +144,40 @@ function PowerOfAdvertisment() {
         <div className="font-bold text-7xl w-1/2 text-center top-0 pb-20">
           ADVERTISMENT THAT CHANGED BRAND VALUE AND REACH
         </div>
-        <div className="flex justify-around  " style={{ width: "80%" }}>
+        <div className="flex" style={{ width: "80%" }}>
           <div className="">
-            <div className="">
-              <div
-                className="w-1/2 h-50 grid place-content-center justify-self-center"
-                data-aos="fade-up"
+            <div className="justify-items-center">
+              <motion.div
+                animate={{ y: [0, -20, 0] }}
+                transition={{ repeat: Infinity, duration: 1.5 }}
               >
                 <span className="text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth="1.5"
+                    stroke-width="1.5"
                     stroke="currentColor"
-                    className="size-50 animate-blink"
+                    className="size-60"
                   >
                     <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
                     />
                   </svg>
                 </span>
-              </div>
+              </motion.div>
             </div>
 
-            <div className="text-2xl text-center w-5/6 justify-self-center">
+            <div className="text-4xl text-center w-5/6 justify-self-center">
               High Recall Rates
             </div>
           </div>
-          <div className="">
-            <div
-              className="w-1/2 h-50  grid place-content-center  justify-self-center"
-              data-aos="fade-up"
+          <div className="justify-items-center">
+            <motion.div
+              animate={{ y: [0, -20, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
             >
               <span className="text-white">
                 <svg
@@ -184,25 +186,25 @@ function PowerOfAdvertisment() {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="size-50"
+                  className="size-60"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                    d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
                   />
                 </svg>
               </span>
-            </div>
+            </motion.div>
 
-            <div className="text-2xl text-center w-5/6 justify-self-center">
+            <div className="text-4xl text-center w-5/6 justify-self-center">
               Demographic Route Planning
             </div>
           </div>
-          <div className="">
-            <div
-              className="w-1/2 h-50  grid place-content-center  justify-self-center"
-              data-aos="fade-up"
+          <div className="justify-items-center">
+            <motion.div
+              animate={{ y: [0, -20, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
             >
               <span className="text-white">
                 <svg
@@ -211,25 +213,25 @@ function PowerOfAdvertisment() {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="size-50"
+                  className="size-60"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                    d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
                   />
                 </svg>
               </span>
-            </div>
+            </motion.div>
 
-            <div className="text-2xl text-center  w-5/6 justify-self-center">
+            <div className="text-4xl text-center  w-5/6 justify-self-center">
               Simplified Execution
             </div>
           </div>
-          <div className="">
-            <div
-              className="w-1/2 h-50  grid place-content-center  justify-self-center"
-              data-aos="fade-up"
+          <div className="justify-items-center">
+            <motion.div
+              animate={{ y: [0, -20, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5 }}
             >
               <span className="text-white">
                 <svg
@@ -238,18 +240,18 @@ function PowerOfAdvertisment() {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="size-50"
+                  className="size-60"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                    d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
                   />
                 </svg>
               </span>
-            </div>
+            </motion.div>
 
-            <div className="text-2xl text-center w-5/6 justify-self-center">
+            <div className="text-4xl text-center w-5/6 justify-self-center">
               Get a proved Assumption of Impression
             </div>
           </div>
@@ -257,34 +259,6 @@ function PowerOfAdvertisment() {
       </div>
 
       <div className="h-screen  flex flex-col justify-around items-center">
-        {/* <div className="w-3/5 h-1/5 flex flex-row">
-          <div className="w-1/4  h-full">
-            <div className="text-2xl font-bold">• High Visibility</div>
-            <div className="text-2xl font-bold">• Cost effective</div>
-            <div className="text-2xl font-bold">• Targeted reach</div>
-            <div className="text-2xl font-bold">• Additional income for vechile owners</div>
-          </div>
-          <div className="w-3/4  text-black font-bold text-center text-7xl py-4 px-2">
-            WHY IS IT BETTER
-          </div>
-        </div>
-        <div className="w-2/3 h-1/5  flex flex-row">
-
-          <div className="w-3/5  py-4 px-2  h-full text-black font-bold text-7xl text-center ">
-            WHAT YOU GET
-          </div>
-          <div className="w-1/2 pl-4">
-            <div className="text-2xl font-bold">
-            • Wide Audience engagement with moving billboards
-            </div>
-            <div className="text-2xl font-bold">
-            • Customizable Campaigns tailored to business user
-            </div>
-            <div className="text-2xl font-bold">• Real time Analytics to track and performance</div>
-            <div className="text-2xl font-bold">• Scalable solutions for business all sizes</div>
-          </div>
-        </div> */}
-
         <div className="flex text-black justify-center">
           <div className=" " style={{ width: "30%" }}>
             <div className="text-3xl font-semibold">• High Visibility</div>
@@ -319,12 +293,7 @@ function PowerOfAdvertisment() {
           LEARN ABOUT THE SERVICES
         </div>
       </div>
-      {/* <div
-        className="justify-self-center items-center"
-        style={{ backgroundColor: "#000000" }}
-      >
-        <img src={Truck3} alt="" />
-      </div> */}
+
       <div className="flex flex-col justify-around items-center mb-10">
         <Link to="/contactus">
           <div
