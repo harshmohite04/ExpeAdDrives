@@ -7,7 +7,7 @@ function DashboardWhenlogIn() {
        <div className="">
          <img src={Logo2} alt="" className="w-1/12 ml-20 "/>
         </div>
-      {/* <OverViewPage />; */}
+      <OverViewPage />;
     </div>
 )
 }

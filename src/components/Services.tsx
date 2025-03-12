@@ -18,25 +18,27 @@ function Services() {
   const [lastScrollTime, setLastScrollTime] = useState(0);
 
   useEffect(() => {
-    const handleScroll = (event) => {
+    const handleScroll = (event: WheelEvent) => {
       const now = Date.now();
-      if (now - lastScrollTime < 1) return; // Prevent fast scrolling
+      if (now - lastScrollTime < 300) return; // Increased debounce time for better user experience
 
-      if (event.deltaY > 50 && index < texts.length - 1) {
-        setIndex((prevIndex) => prevIndex + 1);
+      if (event.deltaY > 0) {
+        // Scrolling down
+        setIndex((prevIndex) => (prevIndex < texts.length - 1 ? prevIndex + 1 : prevIndex));
         setLastScrollTime(now);
-      } else if (event.deltaY < -50 && index > 0) {
-        setIndex((prevIndex) => prevIndex - 1);
+      } else if (event.deltaY < 0) {
+        // Scrolling up
+        setIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : prevIndex));
         setLastScrollTime(now);
       }
     };
 
-    window.addEventListener("wheel", handleScroll);
+    window.addEventListener("wheel", handleScroll as EventListener);
 
     return () => {
-      window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("wheel", handleScroll as EventListener);
     };
-  }, [index, lastScrollTime]);
+  }, [lastScrollTime, texts.length]);
   const [isOn, setIsOn] = useState(false);
   return (
     <div
