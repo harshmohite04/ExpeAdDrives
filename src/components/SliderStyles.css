@@ -1,0 +1,35 @@
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures proper fit */
+    display: block;
+  }
+  
+  .image-wrapper::before,
+  .image-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20%; /* Gradient height */
+    pointer-events: none; /* Ensures clicks pass through */
+  }
+  
+  .image-wrapper::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+  }
+  
+  .image-wrapper::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  }
+  

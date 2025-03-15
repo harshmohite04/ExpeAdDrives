@@ -9,7 +9,13 @@ import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
-
+import Parallax from "./compo/Parallax";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Img1 from "../assets/mockup1.png";
+import Img2 from "../assets/mockup2.png";
+import Img3 from "../assets/mockup3.png";
 function PowerOfAdvertisment() {
   const [isOn, setIsOn] = useState(false);
 
@@ -36,12 +42,27 @@ function PowerOfAdvertisment() {
     AOS.init({ duration: 800, once: false });
     AOS.refresh();
   }, []);
+
+  const images = [Img1, Img2, Img3];
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    fade: true,
+    arrows: false
+  };
   return (
     <div className="h-screen text-white relative overflow-y-scroll bg-gradient-to-r from-[#EA2222] to-[#1765C1]">
       <div className="flex flex-row justify-between px-10 py-1 top-0 z-10 items-center">
         <Link to="/" className="w-1/12">
           <img src={Logo} alt="Logo" className="" />
         </Link>
+        
         {!isOn ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -63,12 +84,28 @@ function PowerOfAdvertisment() {
         ) : null}
       </div>
 
-      <div className="flex flex-col justify-start items-center h-screen">
-        <div className="font-bold text-6xl ">POWER OF ADVERTISEMENT</div>
-        <div className="text-xl mt-4">In the Form of Fleet</div>
-        {/* <PowerBIReport embedUrl={embedUrl} accessToken={accessToken} /> */}
+      <div className="relative w-full h-screen">
+        <Slider {...settings} className="absolute w-full h-full">
+          {images.map((img, index) => (
+            <div key={index} className="w-full h-screen">
+              <img
+                src={img}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </Slider>
+
+        <div className="absolute inset-0 flex flex-col justify-center items-center ">
+          <div className="font-bold text-6xl text">
+            POWER OF ADVERTISEMENT
+          </div>
+          <div className="text-xl mt-4">In the Form of Fleet</div>
+        </div>
       </div>
-      {/* <OverViewPage /> */}
+
+      {/* <Parallax /> */}
 
       {isOn && (
         <div className="absolute top-0 right-0 w-1/7 bg-opacity-75 flex items-start mt-20 justify-end z-50">
@@ -123,7 +160,7 @@ function PowerOfAdvertisment() {
       )}
 
       <div className="absolute bottom-10 left-0 right-0 text-center">
-        <div className="text-xl">Scroll Down to Know More</div>
+        <div className="text-xl ">Scroll Down to Know More</div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
